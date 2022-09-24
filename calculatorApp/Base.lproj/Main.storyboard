@@ -6,6 +6,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ReemKufi-Regular.ttf">
+            <string>ReemKufi-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -29,7 +34,7 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="÷">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
+                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="39"/>
                                             <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
@@ -65,7 +70,7 @@
                                         <rect key="frame" x="26" y="0.0" width="68.333333333333329" height="68.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="C">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                            <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="30"/>
                                             <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
@@ -100,7 +105,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="7">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                                    <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="36"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
@@ -114,7 +119,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="8">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                                    <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="36"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
@@ -128,7 +133,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="9">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                                    <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="36"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
@@ -152,7 +157,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="4">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
+                                                    <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="38"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
@@ -166,7 +171,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="5">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
+                                                    <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="38"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
@@ -180,7 +185,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="6">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
+                                                    <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="38"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
@@ -204,7 +209,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="1">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
+                                                    <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="38"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
@@ -218,7 +223,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="2">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
+                                                    <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="38"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
@@ -232,7 +237,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="3">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
+                                                    <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="38"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
@@ -256,7 +261,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="+/-">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                    <fontDescription key="titleFontDescription" name="AlNile" family="Al Nile" pointSize="28"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
@@ -270,7 +275,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="0">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="37"/>
+                                                    <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="37"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
@@ -284,7 +289,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title=".">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
+                                                    <fontDescription key="titleFontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="45"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
@@ -310,7 +315,7 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="x">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                            <fontDescription key="titleFontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                             <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
@@ -324,7 +329,7 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="-">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                            <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="43"/>
                                             <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
@@ -338,7 +343,7 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="+">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="42"/>
                                             <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
@@ -352,7 +357,7 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="=">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
                                             <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
@@ -372,6 +377,18 @@
                                     <constraint firstItem="mRV-QI-LtR" firstAttribute="leading" secondItem="h9M-Gp-oZL" secondAttribute="leading" id="zQW-Wb-SjD"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U3s-4C-rDv">
+                                <rect key="frame" x="163.66666666666663" y="285.66666666666669" width="194.33333333333337" height="90"/>
+                                <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="299 x 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFz-7t-hhm">
+                                <rect key="frame" x="231.66666666666666" y="237" width="126.33333333333334" height="48"/>
+                                <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="32"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -379,18 +396,24 @@
                             <constraint firstItem="h9M-Gp-oZL" firstAttribute="centerY" secondItem="bhC-YO-gIS" secondAttribute="centerY" id="18t-3k-c1x"/>
                             <constraint firstItem="bhC-YO-gIS" firstAttribute="top" secondItem="eRK-A4-mtB" secondAttribute="bottom" constant="5" id="2W3-OV-Xg3"/>
                             <constraint firstItem="ITC-W0-J1r" firstAttribute="centerX" secondItem="fMD-1y-J7J" secondAttribute="centerX" id="44h-3C-Gsd"/>
+                            <constraint firstItem="sxk-S6-D5k" firstAttribute="top" secondItem="U3s-4C-rDv" secondAttribute="bottom" id="4SQ-8s-pvV"/>
                             <constraint firstItem="mRV-QI-LtR" firstAttribute="centerY" secondItem="8uQ-GV-CPB" secondAttribute="centerY" id="6Vh-aR-8Uf"/>
                             <constraint firstItem="03K-si-d9B" firstAttribute="centerX" secondItem="eua-4f-9QM" secondAttribute="centerX" id="7T9-vx-mIt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fFz-7t-hhm" secondAttribute="trailing" constant="32" id="7Va-1L-paG"/>
+                            <constraint firstItem="U3s-4C-rDv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="88e-WU-R2z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eRK-A4-mtB" secondAttribute="trailing" constant="32" id="CR8-4l-VLw"/>
                             <constraint firstItem="fOA-UF-kxI" firstAttribute="centerY" secondItem="lFC-dq-6rR" secondAttribute="centerY" id="D0f-9o-D5w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U3s-4C-rDv" secondAttribute="trailing" constant="32" id="EoL-dn-zxe"/>
                             <constraint firstItem="eRK-A4-mtB" firstAttribute="height" secondItem="eua-4f-9QM" secondAttribute="height" multiplier="1.0049" id="Fn0-xr-Tc8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h9M-Gp-oZL" secondAttribute="trailing" constant="32" id="HPY-rZ-Vu9"/>
                             <constraint firstItem="eRK-A4-mtB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hjb-od-cFc"/>
                             <constraint firstItem="bhC-YO-gIS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ItG-8G-4P9"/>
+                            <constraint firstItem="fFz-7t-hhm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LKp-K1-aFE"/>
                             <constraint firstItem="sxk-S6-D5k" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Npf-oF-zZt"/>
                             <constraint firstItem="eua-4f-9QM" firstAttribute="centerY" secondItem="1kZ-IE-YuT" secondAttribute="centerY" id="O12-a3-jLl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bhC-YO-gIS" secondAttribute="trailing" constant="110" id="O1B-Re-jov"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bhC-YO-gIS" secondAttribute="bottom" constant="10" id="Pqe-2D-S0n"/>
+                            <constraint firstItem="U3s-4C-rDv" firstAttribute="top" secondItem="fFz-7t-hhm" secondAttribute="bottom" constant="0.67000000000000004" id="S57-oM-Caj"/>
                             <constraint firstItem="h9M-Gp-oZL" firstAttribute="leading" secondItem="bhC-YO-gIS" secondAttribute="trailing" constant="10" id="TpK-oq-RT4"/>
                             <constraint firstItem="XaU-A3-J2F" firstAttribute="centerX" secondItem="1kZ-IE-YuT" secondAttribute="centerX" id="WwH-9q-z4f"/>
                             <constraint firstItem="yor-7D-FbG" firstAttribute="centerY" secondItem="oM6-7q-eP5" secondAttribute="centerY" id="Yv5-xX-PFN"/>
@@ -409,7 +432,7 @@
     </scenes>
     <designables>
         <designable name="03K-si-d9B">
-            <size key="intrinsicContentSize" width="48.666666666666664" height="62"/>
+            <size key="intrinsicContentSize" width="43.666666666666664" height="59.333333333333336"/>
         </designable>
         <designable name="ITC-W0-J1r">
             <size key="intrinsicContentSize" width="38.666666666666664" height="50"/>
@@ -418,19 +441,19 @@
             <size key="intrinsicContentSize" width="44" height="42.666666666666664"/>
         </designable>
         <designable name="eua-4f-9QM">
-            <size key="intrinsicContentSize" width="38.666666666666664" height="50"/>
+            <size key="intrinsicContentSize" width="39.333333333333336" height="50.666666666666664"/>
         </designable>
         <designable name="fOA-UF-kxI">
-            <size key="intrinsicContentSize" width="42.666666666666664" height="50"/>
+            <size key="intrinsicContentSize" width="45" height="62.666666666666664"/>
         </designable>
         <designable name="m31-kG-HXG">
-            <size key="intrinsicContentSize" width="45" height="50"/>
+            <size key="intrinsicContentSize" width="45" height="59"/>
         </designable>
         <designable name="mRV-QI-LtR">
-            <size key="intrinsicContentSize" width="42.666666666666664" height="50"/>
+            <size key="intrinsicContentSize" width="44" height="60.333333333333336"/>
         </designable>
         <designable name="yor-7D-FbG">
-            <size key="intrinsicContentSize" width="37.333333333333336" height="50"/>
+            <size key="intrinsicContentSize" width="38.333333333333336" height="70.666666666666671"/>
         </designable>
     </designables>
 </document>

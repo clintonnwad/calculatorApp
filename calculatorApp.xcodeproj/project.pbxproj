@@ -13,6 +13,10 @@
 		048ED32728DB368300BD3171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048ED32528DB368300BD3171 /* Main.storyboard */; };
 		048ED32928DB368500BD3171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048ED32828DB368500BD3171 /* Assets.xcassets */; };
 		048ED32C28DB368500BD3171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048ED32A28DB368500BD3171 /* LaunchScreen.storyboard */; };
+		989334E428DFC19700698178 /* ReemKufi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 989334E028DFC05C00698178 /* ReemKufi-Bold.ttf */; };
+		989334E528DFC19A00698178 /* ReemKufi-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 989334E128DFC05C00698178 /* ReemKufi-Medium.ttf */; };
+		989334E628DFC19D00698178 /* ReemKufi-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 989334E328DFC05C00698178 /* ReemKufi-SemiBold.ttf */; };
+		989334E728DFC1A000698178 /* ReemKufi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 989334E228DFC05C00698178 /* ReemKufi-Regular.ttf */; };
 		98C415D328DFA07600F23B55 /* CircleUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C415D228DFA07600F23B55 /* CircleUIButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -154,7 +158,11 @@
 			files = (
 				048ED32C28DB368500BD3171 /* LaunchScreen.storyboard in Resources */,
 				048ED32928DB368500BD3171 /* Assets.xcassets in Resources */,
+				989334E728DFC1A000698178 /* ReemKufi-Regular.ttf in Resources */,
+				989334E528DFC19A00698178 /* ReemKufi-Medium.ttf in Resources */,
 				048ED32728DB368300BD3171 /* Main.storyboard in Resources */,
+				989334E428DFC19700698178 /* ReemKufi-Bold.ttf in Resources */,
+				989334E628DFC19D00698178 /* ReemKufi-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
