@@ -23,10 +23,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRK-A4-mtB">
-                                <rect key="frame" x="33" y="405.66666666666669" width="325" height="68.333333333333314"/>
+                                <rect key="frame" x="0.0" y="405.66666666666669" width="358" height="68.333333333333314"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03K-si-d9B" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
-                                        <rect key="frame" x="256.66666666666669" y="0.0" width="68.333333333333314" height="68.333333333333329"/>
+                                        <rect key="frame" x="290" y="0.0" width="68.333333333333314" height="68.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="03K-si-d9B" secondAttribute="height" multiplier="1:1" id="eDe-My-ilP"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="x">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
@@ -36,8 +39,11 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6s6-rI-fPY" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
-                                        <rect key="frame" x="171" y="0.0" width="68.666666666666686" height="68.333333333333329"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaU-A3-J2F" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
+                                        <rect key="frame" x="206" y="0.0" width="68.333333333333314" height="68.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="XaU-A3-J2F" secondAttribute="height" multiplier="1:1" id="KId-lQ-neQ"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="x">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
@@ -47,8 +53,8 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZO-st-XDt" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
-                                        <rect key="frame" x="85.666666666666686" y="0.0" width="68.333333333333314" height="68.333333333333329"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITC-W0-J1r" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
+                                        <rect key="frame" x="116" y="0.0" width="68.333333333333314" height="68.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="x">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
@@ -58,8 +64,8 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQn-kc-foO" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="68.666666666666671" height="68.333333333333329"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m31-kG-HXG" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
+                                        <rect key="frame" x="26" y="0.0" width="68.333333333333329" height="68.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="x">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
@@ -72,23 +78,16 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="03K-si-d9B" firstAttribute="top" secondItem="eRK-A4-mtB" secondAttribute="top" id="0cQ-3Z-mAY"/>
-                                    <constraint firstItem="6s6-rI-fPY" firstAttribute="top" secondItem="eRK-A4-mtB" secondAttribute="top" id="Ahr-YA-zh6"/>
-                                    <constraint firstItem="JQn-kc-foO" firstAttribute="width" secondItem="JQn-kc-foO" secondAttribute="height" multiplier="1:1" id="BpG-KO-FDA"/>
-                                    <constraint firstItem="6s6-rI-fPY" firstAttribute="width" secondItem="6s6-rI-fPY" secondAttribute="height" multiplier="1:1" id="CaR-lY-8aT"/>
-                                    <constraint firstItem="5ZO-st-XDt" firstAttribute="leading" secondItem="JQn-kc-foO" secondAttribute="trailing" constant="17" id="Cap-Ic-klM"/>
-                                    <constraint firstItem="03K-si-d9B" firstAttribute="width" secondItem="03K-si-d9B" secondAttribute="height" multiplier="1:1" id="CxM-9f-62v"/>
-                                    <constraint firstAttribute="trailing" secondItem="03K-si-d9B" secondAttribute="trailing" id="F6q-nz-6Sj"/>
-                                    <constraint firstAttribute="bottom" secondItem="JQn-kc-foO" secondAttribute="bottom" id="Fs9-7N-ZfL"/>
-                                    <constraint firstItem="5ZO-st-XDt" firstAttribute="width" secondItem="5ZO-st-XDt" secondAttribute="height" multiplier="1:1" id="HSx-Ks-5R8"/>
-                                    <constraint firstAttribute="bottom" secondItem="5ZO-st-XDt" secondAttribute="bottom" id="Pni-7P-GCV"/>
-                                    <constraint firstAttribute="bottom" secondItem="6s6-rI-fPY" secondAttribute="bottom" id="QCp-8z-4Xt"/>
-                                    <constraint firstItem="6s6-rI-fPY" firstAttribute="leading" secondItem="5ZO-st-XDt" secondAttribute="trailing" constant="17" id="WlE-jj-tgS"/>
-                                    <constraint firstAttribute="bottom" secondItem="03K-si-d9B" secondAttribute="bottom" id="X3F-zp-xZR"/>
-                                    <constraint firstItem="JQn-kc-foO" firstAttribute="top" secondItem="eRK-A4-mtB" secondAttribute="top" id="aTc-Em-jy2"/>
-                                    <constraint firstItem="JQn-kc-foO" firstAttribute="leading" secondItem="eRK-A4-mtB" secondAttribute="leading" id="acy-cd-u8r"/>
-                                    <constraint firstItem="03K-si-d9B" firstAttribute="leading" secondItem="6s6-rI-fPY" secondAttribute="trailing" constant="17" id="cWR-uv-bzG"/>
-                                    <constraint firstItem="5ZO-st-XDt" firstAttribute="top" secondItem="eRK-A4-mtB" secondAttribute="top" id="ltK-dm-vz2"/>
+                                    <constraint firstItem="ITC-W0-J1r" firstAttribute="top" secondItem="eRK-A4-mtB" secondAttribute="top" id="5jz-wA-fI6"/>
+                                    <constraint firstItem="03K-si-d9B" firstAttribute="top" secondItem="eRK-A4-mtB" secondAttribute="top" id="EmY-aB-RAr"/>
+                                    <constraint firstItem="XaU-A3-J2F" firstAttribute="top" secondItem="eRK-A4-mtB" secondAttribute="top" id="F64-54-g27"/>
+                                    <constraint firstItem="m31-kG-HXG" firstAttribute="top" secondItem="eRK-A4-mtB" secondAttribute="top" id="Gd9-4t-RqM"/>
+                                    <constraint firstItem="m31-kG-HXG" firstAttribute="width" secondItem="m31-kG-HXG" secondAttribute="height" multiplier="1:1" id="HTh-EG-abi"/>
+                                    <constraint firstAttribute="bottom" secondItem="XaU-A3-J2F" secondAttribute="bottom" id="MlE-4W-dsA"/>
+                                    <constraint firstAttribute="bottom" secondItem="03K-si-d9B" secondAttribute="bottom" id="RAL-YS-8ms"/>
+                                    <constraint firstAttribute="bottom" secondItem="m31-kG-HXG" secondAttribute="bottom" id="ZPf-io-Edj"/>
+                                    <constraint firstAttribute="bottom" secondItem="ITC-W0-J1r" secondAttribute="bottom" id="rMJ-PX-Zrh"/>
+                                    <constraint firstItem="ITC-W0-J1r" firstAttribute="width" secondItem="ITC-W0-J1r" secondAttribute="height" multiplier="1:1" id="ydX-20-upH"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="bhC-YO-gIS">
@@ -381,18 +380,23 @@
                         <constraints>
                             <constraint firstItem="h9M-Gp-oZL" firstAttribute="centerY" secondItem="bhC-YO-gIS" secondAttribute="centerY" id="18t-3k-c1x"/>
                             <constraint firstItem="bhC-YO-gIS" firstAttribute="top" secondItem="eRK-A4-mtB" secondAttribute="bottom" constant="10" id="2W3-OV-Xg3"/>
+                            <constraint firstItem="ITC-W0-J1r" firstAttribute="centerX" secondItem="fMD-1y-J7J" secondAttribute="centerX" id="44h-3C-Gsd"/>
                             <constraint firstItem="mRV-QI-LtR" firstAttribute="centerY" secondItem="8uQ-GV-CPB" secondAttribute="centerY" id="6Vh-aR-8Uf"/>
+                            <constraint firstItem="03K-si-d9B" firstAttribute="centerX" secondItem="eua-4f-9QM" secondAttribute="centerX" id="7T9-vx-mIt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eRK-A4-mtB" secondAttribute="trailing" constant="32" id="CR8-4l-VLw"/>
                             <constraint firstItem="fOA-UF-kxI" firstAttribute="centerY" secondItem="lFC-dq-6rR" secondAttribute="centerY" id="D0f-9o-D5w"/>
+                            <constraint firstItem="eRK-A4-mtB" firstAttribute="height" secondItem="eua-4f-9QM" secondAttribute="height" multiplier="1.0049" id="Fn0-xr-Tc8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h9M-Gp-oZL" secondAttribute="trailing" constant="32" id="HPY-rZ-Vu9"/>
-                            <constraint firstItem="eRK-A4-mtB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="Hjb-od-cFc"/>
+                            <constraint firstItem="eRK-A4-mtB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hjb-od-cFc"/>
                             <constraint firstItem="bhC-YO-gIS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ItG-8G-4P9"/>
                             <constraint firstItem="sxk-S6-D5k" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Npf-oF-zZt"/>
                             <constraint firstItem="eua-4f-9QM" firstAttribute="centerY" secondItem="1kZ-IE-YuT" secondAttribute="centerY" id="O12-a3-jLl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bhC-YO-gIS" secondAttribute="trailing" constant="110" id="O1B-Re-jov"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bhC-YO-gIS" secondAttribute="bottom" id="Pqe-2D-S0n"/>
                             <constraint firstItem="h9M-Gp-oZL" firstAttribute="leading" secondItem="bhC-YO-gIS" secondAttribute="trailing" constant="10" id="TpK-oq-RT4"/>
+                            <constraint firstItem="XaU-A3-J2F" firstAttribute="centerX" secondItem="1kZ-IE-YuT" secondAttribute="centerX" id="WwH-9q-z4f"/>
                             <constraint firstItem="yor-7D-FbG" firstAttribute="centerY" secondItem="oM6-7q-eP5" secondAttribute="centerY" id="Yv5-xX-PFN"/>
+                            <constraint firstItem="m31-kG-HXG" firstAttribute="centerX" secondItem="sZ0-d8-1nd" secondAttribute="centerX" id="bhZ-RR-KVV"/>
                             <constraint firstAttribute="bottom" secondItem="sxk-S6-D5k" secondAttribute="bottom" id="duQ-V8-0mi"/>
                             <constraint firstItem="h9M-Gp-oZL" firstAttribute="height" secondItem="bhC-YO-gIS" secondAttribute="height" multiplier="0.981595" id="gBv-Ab-dPg"/>
                             <constraint firstItem="sxk-S6-D5k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ifA-lC-kXt"/>
@@ -408,13 +412,10 @@
         <designable name="03K-si-d9B">
             <size key="intrinsicContentSize" width="38.666666666666664" height="50"/>
         </designable>
-        <designable name="5ZO-st-XDt">
+        <designable name="ITC-W0-J1r">
             <size key="intrinsicContentSize" width="38.666666666666664" height="50"/>
         </designable>
-        <designable name="6s6-rI-fPY">
-            <size key="intrinsicContentSize" width="38.666666666666664" height="50"/>
-        </designable>
-        <designable name="JQn-kc-foO">
+        <designable name="XaU-A3-J2F">
             <size key="intrinsicContentSize" width="38.666666666666664" height="50"/>
         </designable>
         <designable name="eua-4f-9QM">
@@ -422,6 +423,9 @@
         </designable>
         <designable name="fOA-UF-kxI">
             <size key="intrinsicContentSize" width="42.666666666666664" height="50"/>
+        </designable>
+        <designable name="m31-kG-HXG">
+            <size key="intrinsicContentSize" width="38.666666666666664" height="50"/>
         </designable>
         <designable name="mRV-QI-LtR">
             <size key="intrinsicContentSize" width="42.666666666666664" height="50"/>
