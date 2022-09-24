@@ -16,11 +16,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sxk-S6-D5k">
-                                <rect key="frame" x="0.0" y="385.66666666666674" width="390" height="458.33333333333326"/>
+                                <rect key="frame" x="0.0" y="375.66666666666674" width="390" height="468.33333333333326"/>
                                 <color key="backgroundColor" red="0.15062716600000001" green="0.16106361150000001" blue="0.1922501922" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRK-A4-mtB">
-                                <rect key="frame" x="0.0" y="410.66666666666669" width="358" height="68.333333333333314"/>
+                                <rect key="frame" x="0.0" y="400.66666666666669" width="358" height="68.333333333333314"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03K-si-d9B" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
                                         <rect key="frame" x="290" y="0.0" width="68.333333333333314" height="68.333333333333329"/>
@@ -88,7 +88,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="bhC-YO-gIS">
-                                <rect key="frame" x="20" y="484" width="260" height="326"/>
+                                <rect key="frame" x="20" y="474" width="260" height="326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bVd-no-gFU">
                                         <rect key="frame" x="0.0" y="0.0" width="260" height="80"/>
@@ -301,7 +301,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9M-Gp-oZL">
-                                <rect key="frame" x="290" y="487" width="68" height="320"/>
+                                <rect key="frame" x="290" y="477" width="68" height="320"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eua-4f-9QM" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="3" width="68" height="68"/>
@@ -390,7 +390,7 @@
                             <constraint firstItem="sxk-S6-D5k" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Npf-oF-zZt"/>
                             <constraint firstItem="eua-4f-9QM" firstAttribute="centerY" secondItem="1kZ-IE-YuT" secondAttribute="centerY" id="O12-a3-jLl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bhC-YO-gIS" secondAttribute="trailing" constant="110" id="O1B-Re-jov"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bhC-YO-gIS" secondAttribute="bottom" id="Pqe-2D-S0n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bhC-YO-gIS" secondAttribute="bottom" constant="10" id="Pqe-2D-S0n"/>
                             <constraint firstItem="h9M-Gp-oZL" firstAttribute="leading" secondItem="bhC-YO-gIS" secondAttribute="trailing" constant="10" id="TpK-oq-RT4"/>
                             <constraint firstItem="XaU-A3-J2F" firstAttribute="centerX" secondItem="1kZ-IE-YuT" secondAttribute="centerX" id="WwH-9q-z4f"/>
                             <constraint firstItem="yor-7D-FbG" firstAttribute="centerY" secondItem="oM6-7q-eP5" secondAttribute="centerY" id="Yv5-xX-PFN"/>

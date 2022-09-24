@@ -25,6 +25,10 @@
 		048ED32828DB368500BD3171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		048ED32B28DB368500BD3171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		048ED32D28DB368500BD3171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		989334E028DFC05C00698178 /* ReemKufi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReemKufi-Bold.ttf"; sourceTree = "<group>"; };
+		989334E128DFC05C00698178 /* ReemKufi-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReemKufi-Medium.ttf"; sourceTree = "<group>"; };
+		989334E228DFC05C00698178 /* ReemKufi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReemKufi-Regular.ttf"; sourceTree = "<group>"; };
+		989334E328DFC05C00698178 /* ReemKufi-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReemKufi-SemiBold.ttf"; sourceTree = "<group>"; };
 		98C415D228DFA07600F23B55 /* CircleUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleUIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +62,8 @@
 		048ED31E28DB368300BD3171 /* calculatorApp */ = {
 			isa = PBXGroup;
 			children = (
-				98166A4A28DF91BA002CADAF /* IBDesignables */,
+				989334DF28DFBF7500698178 /* fonts */,
+				98166A4A28DF91BA002CADAF /* designables */,
 				048ED31F28DB368300BD3171 /* AppDelegate.swift */,
 				048ED32128DB368300BD3171 /* SceneDelegate.swift */,
 				048ED32328DB368300BD3171 /* ViewController.swift */,
@@ -70,12 +75,23 @@
 			path = calculatorApp;
 			sourceTree = "<group>";
 		};
-		98166A4A28DF91BA002CADAF /* IBDesignables */ = {
+		98166A4A28DF91BA002CADAF /* designables */ = {
 			isa = PBXGroup;
 			children = (
 				98C415D228DFA07600F23B55 /* CircleUIButton.swift */,
 			);
-			path = IBDesignables;
+			path = designables;
+			sourceTree = "<group>";
+		};
+		989334DF28DFBF7500698178 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				989334E028DFC05C00698178 /* ReemKufi-Bold.ttf */,
+				989334E128DFC05C00698178 /* ReemKufi-Medium.ttf */,
+				989334E228DFC05C00698178 /* ReemKufi-Regular.ttf */,
+				989334E328DFC05C00698178 /* ReemKufi-SemiBold.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YBSQ7W65CP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = calculatorApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -326,6 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YBSQ7W65CP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = calculatorApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
