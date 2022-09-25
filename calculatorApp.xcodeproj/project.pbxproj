@@ -13,6 +13,14 @@
 		048ED32728DB368300BD3171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048ED32528DB368300BD3171 /* Main.storyboard */; };
 		048ED32928DB368500BD3171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048ED32828DB368500BD3171 /* Assets.xcassets */; };
 		048ED32C28DB368500BD3171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048ED32A28DB368500BD3171 /* LaunchScreen.storyboard */; };
+		989334E428DFC19700698178 /* ReemKufi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 989334E028DFC05C00698178 /* ReemKufi-Bold.ttf */; };
+		989334E528DFC19A00698178 /* ReemKufi-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 989334E128DFC05C00698178 /* ReemKufi-Medium.ttf */; };
+		989334E628DFC19D00698178 /* ReemKufi-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 989334E328DFC05C00698178 /* ReemKufi-SemiBold.ttf */; };
+		989334E728DFC1A000698178 /* ReemKufi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 989334E228DFC05C00698178 /* ReemKufi-Regular.ttf */; };
+		98BF4B4728DFC8AC009C54E1 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BF4B4628DFC8AC009C54E1 /* CustomUIView.swift */; };
+		98BF4B4A28DFD24A009C54E1 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BF4B4928DFD24A009C54E1 /* Number.swift */; };
+		98BF4B5B28DFF3BB009C54E1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BF4B5A28DFF3BB009C54E1 /* Constant.swift */; };
+		98C415D328DFA07600F23B55 /* CircleUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C415D228DFA07600F23B55 /* CircleUIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		048ED32828DB368500BD3171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		048ED32B28DB368500BD3171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		048ED32D28DB368500BD3171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		989334E028DFC05C00698178 /* ReemKufi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReemKufi-Bold.ttf"; sourceTree = "<group>"; };
+		989334E128DFC05C00698178 /* ReemKufi-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReemKufi-Medium.ttf"; sourceTree = "<group>"; };
+		989334E228DFC05C00698178 /* ReemKufi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReemKufi-Regular.ttf"; sourceTree = "<group>"; };
+		989334E328DFC05C00698178 /* ReemKufi-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReemKufi-SemiBold.ttf"; sourceTree = "<group>"; };
+		98BF4B4628DFC8AC009C54E1 /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		98BF4B4928DFD24A009C54E1 /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
+		98BF4B5A28DFF3BB009C54E1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		98C415D228DFA07600F23B55 /* CircleUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleUIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,9 @@
 		048ED31E28DB368300BD3171 /* calculatorApp */ = {
 			isa = PBXGroup;
 			children = (
+				98BF4B4828DFD209009C54E1 /* models */,
+				989334DF28DFBF7500698178 /* fonts */,
+				98166A4A28DF91BA002CADAF /* designables */,
 				048ED31F28DB368300BD3171 /* AppDelegate.swift */,
 				048ED32128DB368300BD3171 /* SceneDelegate.swift */,
 				048ED32328DB368300BD3171 /* ViewController.swift */,
@@ -65,6 +84,35 @@
 				048ED32D28DB368500BD3171 /* Info.plist */,
 			);
 			path = calculatorApp;
+			sourceTree = "<group>";
+		};
+		98166A4A28DF91BA002CADAF /* designables */ = {
+			isa = PBXGroup;
+			children = (
+				98C415D228DFA07600F23B55 /* CircleUIButton.swift */,
+				98BF4B4628DFC8AC009C54E1 /* CustomUIView.swift */,
+			);
+			path = designables;
+			sourceTree = "<group>";
+		};
+		989334DF28DFBF7500698178 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				989334E028DFC05C00698178 /* ReemKufi-Bold.ttf */,
+				989334E128DFC05C00698178 /* ReemKufi-Medium.ttf */,
+				989334E228DFC05C00698178 /* ReemKufi-Regular.ttf */,
+				989334E328DFC05C00698178 /* ReemKufi-SemiBold.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		98BF4B4828DFD209009C54E1 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				98BF4B4928DFD24A009C54E1 /* Number.swift */,
+				98BF4B5A28DFF3BB009C54E1 /* Constant.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +175,11 @@
 			files = (
 				048ED32C28DB368500BD3171 /* LaunchScreen.storyboard in Resources */,
 				048ED32928DB368500BD3171 /* Assets.xcassets in Resources */,
+				989334E728DFC1A000698178 /* ReemKufi-Regular.ttf in Resources */,
+				989334E528DFC19A00698178 /* ReemKufi-Medium.ttf in Resources */,
 				048ED32728DB368300BD3171 /* Main.storyboard in Resources */,
+				989334E428DFC19700698178 /* ReemKufi-Bold.ttf in Resources */,
+				989334E628DFC19D00698178 /* ReemKufi-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +191,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				048ED32428DB368300BD3171 /* ViewController.swift in Sources */,
+				98BF4B4A28DFD24A009C54E1 /* Number.swift in Sources */,
+				98BF4B4728DFC8AC009C54E1 /* CustomUIView.swift in Sources */,
+				98C415D328DFA07600F23B55 /* CircleUIButton.swift in Sources */,
 				048ED32028DB368300BD3171 /* AppDelegate.swift in Sources */,
 				048ED32228DB368300BD3171 /* SceneDelegate.swift in Sources */,
+				98BF4B5B28DFF3BB009C54E1 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,15 +341,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = calculatorApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +357,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.centennialcollege.ca.calculatorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,15 +369,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = calculatorApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +385,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.centennialcollege.ca.calculatorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
