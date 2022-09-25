@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+//IB designable add ability to make button prefect circle no matter the height
 @IBDesignable
 class OperatorUIButton: UIButton {
 
@@ -14,7 +14,6 @@ class OperatorUIButton: UIButton {
         didSet {
             if(enableDesign){
                 layer.cornerRadius = layer.bounds.height/2
-//                titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
                 layer.masksToBounds = layer.cornerRadius > 0
             }
         }

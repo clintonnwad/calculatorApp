@@ -7,6 +7,7 @@
 
 import UIKit
 
+//custom UIView to give IB the ability to set cornerRadius on UIView from the UI
 @IBDesignable
 class CustomUIView: UIButton {
 

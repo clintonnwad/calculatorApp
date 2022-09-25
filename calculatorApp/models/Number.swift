@@ -9,8 +9,11 @@ import Foundation
 
 class Number {
     
+    static var separtor:String = ","
+    
+    //format number string
     static func format(number :String) -> String?{
-        let doubleNumberDouble:Double? = Double(number)
+        let doubleNumberDouble:Double? = Double(clean(number)!)
         
         if(doubleNumberDouble == nil){return nil}
         
@@ -21,6 +24,11 @@ class Number {
         let number = NSNumber(value: doubleNumberDouble!)
         let formattedValue = formatter.string(from: number)!
         return formattedValue
+    }
+    
+    //sanitize string remove all separtor
+    static func clean(_ number:String)->String? {
+        return number.replacingOccurrences(of: separtor, with: "")
     }
 
     
