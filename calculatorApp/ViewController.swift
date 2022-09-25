@@ -4,6 +4,10 @@
 //
 //  Created by Cee Jaiy on 2022-09-21.
 //
+//  GROUP NUMBER: 15
+//  NAMES:
+//  Clinton Nwadiukor  - 301291242
+//  Jovi Chen-Mcintyre - 301125059
 
 import UIKit
 
