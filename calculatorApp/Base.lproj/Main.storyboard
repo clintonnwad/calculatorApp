@@ -120,7 +120,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bVd-no-gFU">
                                         <rect key="frame" x="0.0" y="0.0" width="260" height="80"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZ0-d8-1nd" customClass="NumberButtonDesignable" customModule="calculatorApp" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZ0-d8-1nd">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="sZ0-d8-1nd" secondAttribute="height" multiplier="1:1" id="rDb-5r-SQF"/>
@@ -130,11 +130,8 @@
                                                     <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="36"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMD-1y-J7J" customClass="NumberButtonDesignable" customModule="calculatorApp" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMD-1y-J7J">
                                                 <rect key="frame" x="90" y="0.0" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="fMD-1y-J7J" secondAttribute="height" multiplier="1:1" id="TRr-5n-45t"/>
@@ -144,11 +141,8 @@
                                                     <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="36"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kZ-IE-YuT" customClass="NumberButtonDesignable" customModule="calculatorApp" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kZ-IE-YuT">
                                                 <rect key="frame" x="180" y="0.0" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="1kZ-IE-YuT" secondAttribute="height" multiplier="1:1" id="0eS-eV-8g4"/>
@@ -158,9 +152,6 @@
                                                     <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="36"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -172,7 +163,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fU1-5a-lsS">
                                         <rect key="frame" x="0.0" y="82" width="260" height="80"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xA-3b-XvW" customClass="NumberButtonDesignable" customModule="calculatorApp" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xA-3b-XvW">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="9xA-3b-XvW" secondAttribute="height" multiplier="1:1" id="TYH-Gu-t32"/>
@@ -182,11 +173,8 @@
                                                     <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="38"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcO-nD-GTU" customClass="NumberButtonDesignable" customModule="calculatorApp" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcO-nD-GTU">
                                                 <rect key="frame" x="90" y="0.0" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="xcO-nD-GTU" secondAttribute="height" multiplier="1:1" id="X7a-nS-IfX"/>
@@ -196,11 +184,8 @@
                                                     <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="38"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oM6-7q-eP5" customClass="NumberButtonDesignable" customModule="calculatorApp" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oM6-7q-eP5">
                                                 <rect key="frame" x="180" y="0.0" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="oM6-7q-eP5" secondAttribute="height" multiplier="1:1" id="8zJ-T5-ZlI"/>
@@ -210,9 +195,6 @@
                                                     <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="38"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -224,7 +206,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ptf-kq-EQP">
                                         <rect key="frame" x="0.0" y="164" width="260" height="80"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcl-PH-8oS" customClass="NumberButtonDesignable" customModule="calculatorApp" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcl-PH-8oS">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="gcl-PH-8oS" secondAttribute="height" multiplier="1:1" id="a0u-Nc-cDZ"/>
@@ -234,11 +216,8 @@
                                                     <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="38"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAw-V3-xwx" customClass="NumberButtonDesignable" customModule="calculatorApp" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAw-V3-xwx">
                                                 <rect key="frame" x="90" y="0.0" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="zAw-V3-xwx" secondAttribute="height" multiplier="1:1" id="MOG-3f-Tkm"/>
@@ -248,11 +227,8 @@
                                                     <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="38"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFC-dq-6rR" customClass="NumberButtonDesignable" customModule="calculatorApp" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFC-dq-6rR">
                                                 <rect key="frame" x="180" y="0.0" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="lFC-dq-6rR" secondAttribute="height" multiplier="1:1" id="QLF-De-4U7"/>
@@ -262,9 +238,6 @@
                                                     <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="38"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -276,7 +249,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="A2C-bA-tbJ">
                                         <rect key="frame" x="0.0" y="246" width="260" height="80"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAt-F3-mlN" customClass="NumberButtonDesignable" customModule="calculatorApp" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAt-F3-mlN">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="FAt-F3-mlN" secondAttribute="height" multiplier="1:1" id="HDj-fW-YiM"/>
@@ -286,11 +259,8 @@
                                                     <fontDescription key="titleFontDescription" name="AlNile" family="Al Nile" pointSize="28"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgE-U0-HfG" customClass="NumberButtonDesignable" customModule="calculatorApp" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgE-U0-HfG">
                                                 <rect key="frame" x="90" y="0.0" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="rgE-U0-HfG" secondAttribute="height" multiplier="1:1" id="VID-4a-QS2"/>
@@ -300,11 +270,8 @@
                                                     <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="37"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uQ-GV-CPB" customClass="NumberButtonDesignable" customModule="calculatorApp" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uQ-GV-CPB">
                                                 <rect key="frame" x="180" y="0.0" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8uQ-GV-CPB" secondAttribute="height" multiplier="1:1" id="ZRx-Y8-5bB"/>
@@ -314,9 +281,6 @@
                                                     <fontDescription key="titleFontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="45"/>
                                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -400,13 +364,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U3s-4C-rDv">
-                                <rect key="frame" x="20" y="280.66666666666669" width="345" height="90"/>
+                                <rect key="frame" x="20" y="300.66666666666669" width="345" height="70"/>
                                 <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFz-7t-hhm">
-                                <rect key="frame" x="345" y="242.66666666666663" width="20" height="48"/>
+                                <rect key="frame" x="347" y="273.33333333333331" width="18" height="37.333333333333314"/>
                                 <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="32"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -472,7 +436,7 @@
             <size key="intrinsicContentSize" width="45" height="62.666666666666664"/>
         </designable>
         <designable name="m31-kG-HXG">
-            <size key="intrinsicContentSize" width="45" height="59"/>
+            <size key="intrinsicContentSize" width="45.666666666666664" height="49"/>
         </designable>
         <designable name="mRV-QI-LtR">
             <size key="intrinsicContentSize" width="44" height="60.333333333333336"/>
