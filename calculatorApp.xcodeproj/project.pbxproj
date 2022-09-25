@@ -18,6 +18,7 @@
 		989334E628DFC19D00698178 /* ReemKufi-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 989334E328DFC05C00698178 /* ReemKufi-SemiBold.ttf */; };
 		989334E728DFC1A000698178 /* ReemKufi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 989334E228DFC05C00698178 /* ReemKufi-Regular.ttf */; };
 		98BF4B4728DFC8AC009C54E1 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BF4B4628DFC8AC009C54E1 /* CustomUIView.swift */; };
+		98BF4B4A28DFD24A009C54E1 /* NumberInputFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BF4B4928DFD24A009C54E1 /* NumberInputFormatter.swift */; };
 		98C415D328DFA07600F23B55 /* CircleUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C415D228DFA07600F23B55 /* CircleUIButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		989334E228DFC05C00698178 /* ReemKufi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReemKufi-Regular.ttf"; sourceTree = "<group>"; };
 		989334E328DFC05C00698178 /* ReemKufi-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReemKufi-SemiBold.ttf"; sourceTree = "<group>"; };
 		98BF4B4628DFC8AC009C54E1 /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		98BF4B4928DFD24A009C54E1 /* NumberInputFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberInputFormatter.swift; sourceTree = "<group>"; };
 		98C415D228DFA07600F23B55 /* CircleUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleUIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +70,7 @@
 		048ED31E28DB368300BD3171 /* calculatorApp */ = {
 			isa = PBXGroup;
 			children = (
+				98BF4B4828DFD209009C54E1 /* models */,
 				989334DF28DFBF7500698178 /* fonts */,
 				98166A4A28DF91BA002CADAF /* designables */,
 				048ED31F28DB368300BD3171 /* AppDelegate.swift */,
@@ -99,6 +102,14 @@
 				989334E328DFC05C00698178 /* ReemKufi-SemiBold.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		98BF4B4828DFD209009C54E1 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				98BF4B4928DFD24A009C54E1 /* NumberInputFormatter.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				048ED32428DB368300BD3171 /* ViewController.swift in Sources */,
+				98BF4B4A28DFD24A009C54E1 /* NumberInputFormatter.swift in Sources */,
 				98BF4B4728DFC8AC009C54E1 /* CustomUIView.swift in Sources */,
 				98C415D328DFA07600F23B55 /* CircleUIButton.swift in Sources */,
 				048ED32028DB368300BD3171 /* AppDelegate.swift in Sources */,
