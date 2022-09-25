@@ -8,6 +8,16 @@
 //  NAMES:
 //  Clinton Nwadiukor  - 301291242
 //  Jovi Chen-Mcintyre - 301125059
+//
+//  DESCRIPTION:
+//  Simple Calculator app that can perform basic calculator operations
+//
+//  REVISION HISTORY:
+//  https://github.com/clintonnwad/calculatorApp/commits/main
+//
+//  DATE LAST MODIFIED:
+//  September 25, 2022
+
 
 import UIKit
 
@@ -48,7 +58,7 @@ class ViewController: UIViewController {
                 updateResults(newResults,shouldFormat: false)
             }
             else{
-                //if positive try replace - from currenct result and update label
+                //if positive try remove "-" from current result and update label
                 newResults = resultLabel!.text!.replacingOccurrences(of: "-", with: "").trimmingCharacters(in: .whitespacesAndNewlines)
                 updateResults(newResults)
             }

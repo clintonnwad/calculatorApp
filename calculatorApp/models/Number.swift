@@ -8,6 +8,16 @@
 //  NAMES:
 //  Clinton Nwadiukor  - 301291242
 //  Jovi Chen-Mcintyre - 301125059
+//
+//  DESCRIPTION:
+//  Simple Calculator app that can perform basic calculator operations
+//
+//  REVISION HISTORY:
+//  https://github.com/clintonnwad/calculatorApp/commits/main
+//
+//  DATE LAST MODIFIED:
+//  September 25, 2022
+
 
 import Foundation
 
