@@ -16,4 +16,6 @@ class Strings{
     static let clear = "C"
     static let dot = "."
     static let positiveNegative = "+/-"
+    static let empty = ""
+
 }

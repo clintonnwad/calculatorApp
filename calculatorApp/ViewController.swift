@@ -68,8 +68,13 @@ class ViewController: UIViewController {
     
     //update Result label with option to format or not format number
     private func updateResults(_ number:String,shouldFormat:Bool = true) {
-        if(number == ""){
+        if(number == "" || number == "\(Strings.minus) "){
             resultLabel.text = "0"
+            //reset sign
+            isNumberPostive = true
+        }
+        else if(number.contains(".")){
+            resultLabel.text = number
         }
         else if(shouldFormat){
             resultLabel.text = Number.format(number: number)
