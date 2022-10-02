@@ -29,7 +29,11 @@ class ViewController: UIViewController {
     
     //flag to keep track of state of number
     var isNumberPostive = true
+    var userAddedInput = false
     
+    var inputs:[String] = []
+    let operators: [String] = [Strings.divide, Strings.muliply, Strings.plus, Strings.minus]
+
     
     @IBAction func onPress(_ sender: UIButton) {
         let char = sender.titleLabel!.text
@@ -47,6 +51,16 @@ class ViewController: UIViewController {
                 || char == Strings.divide
                 || char == Strings.percentage){
             updateResults("")
+            if(!userAddedInput && !inputs.isEmpty && operators.contains(inputs.last!)){
+                inputs[inputs.count-1] = char!
+            }
+            else{
+                inputs.append(result)
+                inputs.append(char!)
+                userAddedInput = false
+            }
+            displayExpression()
+            
         }
         else if(char == Strings.positiveNegative){
             //toggle positive flag varible
@@ -70,14 +84,28 @@ class ViewController: UIViewController {
             }
         }
         else if(char == Strings.equal){
-            updateResults("")
+            if(inputs.count > 0){
+                inputs.append(result)
+                displayExpression()
+                updateResults(evalExpression(arr: inputs)!)
+            }
         }
         else if(char == Strings.clear){
             updateResults("")
+            inputs.removeAll()
+            displayExpression()
         }
         else if(resultLabel.text != nil){
+            userAddedInput = true
             updateResults(newResults)
         }
+    }
+    
+    
+    private func displayExpression(){
+        
+        expressLabel.text = inputs.joined(separator: " ")
+        
     }
     
     //update Result label with option to format or not format number
@@ -102,17 +130,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+            
     }
     
     private func _eval(_ left: Float, _ operatar: String, _ right: Float) -> Float? {
       var result: Float? = nil
-      if operatar == "+" {
+        if operatar == Strings.plus {
         result = left + right
-      } else if operatar == "-" {
+        } else if operatar == Strings.minus {
         result = left - right
-      } else if operatar == "*" {
+        } else if operatar == Strings.muliply {
         result = left * right
-      } else if operatar == "/" {
+        } else if operatar == Strings.divide {
         result = left / right
       }
       return result
@@ -123,7 +152,6 @@ class ViewController: UIViewController {
       var array = arr
 
       //bodmas
-      let operators: [String] = ["/", "*", "+", "-"]
 
       var shouldExit = false
 
