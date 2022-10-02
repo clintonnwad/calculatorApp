@@ -104,6 +104,79 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    private func _eval(_ left: Float, _ operatar: String, _ right: Float) -> Float? {
+      var result: Float? = nil
+      if operatar == "+" {
+        result = left + right
+      } else if operatar == "-" {
+        result = left - right
+      } else if operatar == "*" {
+        result = left * right
+      } else if operatar == "/" {
+        result = left / right
+      }
+      return result
+    }
+
+    func evalExpression(arr: [String]) -> String? {
+
+      var array = arr
+
+      //bodmas
+      let operators: [String] = ["/", "*", "+", "-"]
+
+      var shouldExit = false
+
+      while !shouldExit {
+
+        var index = 0
+        var newArray: [String] = []
+        for operatar in operators {
+          var didEvalated = false
+
+          for y in 0...array.count - 1 {
+
+            if array[y] == operatar {
+
+              let left: Float = Float(array[y - 1])!
+              let right: Float = Float(array[y + 1])!
+
+              let result: Float? = _eval(left, operatar, right)
+
+              let leftIndex = y - 1
+              let rightIndex = y + 1
+
+              for r in 0...array.count - 1 {
+
+                if r == y {
+                  newArray.append("\(result!)")
+                } else if r != leftIndex && r != rightIndex {
+                  newArray.append(array[r])
+                }
+              }
+
+              didEvalated = true
+              break
+            }
+
+          }
+          //exit second loop
+          if didEvalated {
+            array = newArray
+            break
+          }
+
+          index = index + 1
+        }
+
+        if array.count == 1 {
+          shouldExit = true
+          return array[0]
+        }
+      }
+    }
+
+    
     
     //force status bar color change
     override var preferredStatusBarStyle: UIStatusBarStyle {
