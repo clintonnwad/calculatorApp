@@ -45,6 +45,8 @@ class ViewController: UIViewController {
     
     @IBAction func onPress(_ sender: UIButton) {
         
+        
+        
         //clear display if user presses any button after just doing an evaluation
         if(justEvaluated){
             updateResults("")
@@ -53,9 +55,14 @@ class ViewController: UIViewController {
             justEvaluated = false
         }
         
+        
+        
         let char = sender.titleLabel!.text
         var newResults = "\(resultLabel!.text!)\(sender.titleLabel!.text!)"
         let result =  Number.clean(resultLabel!.text!)!
+        
+
+        
             
         //handle backspace
         if(char == Strings.backspace){
@@ -63,9 +70,12 @@ class ViewController: UIViewController {
         }
         //handle when percent is press
         else if(char == Strings.percentage){
-            var value = Float(result)
+            let value = Float(result)
             if(value != nil) {
-                updateResults("\(value!/100)")
+                let percentageValue = value!/100
+                if(percentageValue != 0){
+                    updateResults("\(value!/100)")
+                }
             }
         }
         //handle operators
@@ -137,6 +147,14 @@ class ViewController: UIViewController {
             displayExpression()
         }
         else if(resultLabel.text != nil){
+            
+            let splits = result.split(separator: ".")
+            if(splits.count > 1){
+                if(splits[1].count >= 8){
+                    return
+                }
+            }
+            
             //if user entered a number trigger flag
             userAddedInput = true
             updateResults(newResults)
