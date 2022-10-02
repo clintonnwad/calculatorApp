@@ -23,33 +23,50 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
+
     @IBOutlet weak var expressLabel: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
     
     //flag to keep track of state of number
     var isNumberPostive = true
     var userAddedInput = false
+    var justEvaluated = false
     
     var inputs:[String] = []
     let operators: [String] = [Strings.divide, Strings.muliply, Strings.plus, Strings.minus]
 
     
     @IBAction func onPress(_ sender: UIButton) {
+        
+        if(justEvaluated){
+            updateResults("")
+            inputs.removeAll()
+            displayExpression()
+            justEvaluated = false
+        }
+        
         let char = sender.titleLabel!.text
         var newResults = "\(resultLabel!.text!)\(sender.titleLabel!.text!)"
         let result =  Number.clean(resultLabel!.text!)!
 
+  
+            
         //handle backspace
         if(char == Strings.backspace){
             updateResults(String(result.prefix(result.count-1)))
+        }
+        else if(char == Strings.percentage){
+            var value = Float(result)
+            if(value != nil) {
+                updateResults("\(value!/100)")
+            }
         }
         //handle operators
         else if(char == Strings.plus
                 || char == Strings.minus
                 || char == Strings.muliply
                 || char == Strings.divide
-                || char == Strings.percentage){
+               ){
             updateResults("")
             if(!userAddedInput && !inputs.isEmpty && operators.contains(inputs.last!)){
                 inputs[inputs.count-1] = char!
@@ -68,7 +85,7 @@ class ViewController: UIViewController {
             
             //if not positive then append - sign on front and dont format
             if(!isNumberPostive){
-                newResults = "- \(resultLabel!.text!)"
+                newResults = "-\(resultLabel!.text!)"
                 updateResults(newResults,shouldFormat: false)
             }
             else{
@@ -88,6 +105,7 @@ class ViewController: UIViewController {
                 inputs.append(result)
                 displayExpression()
                 updateResults(evalExpression(arr: inputs)!)
+                justEvaluated = true
             }
         }
         else if(char == Strings.clear){
