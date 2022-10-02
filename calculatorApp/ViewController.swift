@@ -29,15 +29,23 @@ class ViewController: UIViewController {
     
     //flag to keep track of state of number
     var isNumberPostive = true
+    
+    //flag trigger when user inputs a number
     var userAddedInput = false
+    
+    //flag which is set when a evaluation happens
     var justEvaluated = false
     
+    //stores expression as array
     var inputs:[String] = []
+    
+    //operate in order of precedence (BODMAS)
     let operators: [String] = [Strings.divide, Strings.muliply, Strings.plus, Strings.minus]
 
     
     @IBAction func onPress(_ sender: UIButton) {
         
+        //clear display if user presses any button after just doing an evaluation
         if(justEvaluated){
             updateResults("")
             inputs.removeAll()
@@ -48,13 +56,12 @@ class ViewController: UIViewController {
         let char = sender.titleLabel!.text
         var newResults = "\(resultLabel!.text!)\(sender.titleLabel!.text!)"
         let result =  Number.clean(resultLabel!.text!)!
-
-  
             
         //handle backspace
         if(char == Strings.backspace){
             updateResults(String(result.prefix(result.count-1)))
         }
+        //handle when percent is press
         else if(char == Strings.percentage){
             var value = Float(result)
             if(value != nil) {
@@ -68,10 +75,12 @@ class ViewController: UIViewController {
                 || char == Strings.divide
                ){
             updateResults("")
+            //if last value in input array is an operator and user did not enter an number input then change the operator
             if(!userAddedInput && !inputs.isEmpty && operators.contains(inputs.last!)){
                 inputs[inputs.count-1] = char!
             }
             else{
+                //if user add an input and operator is pressed then add numnber to array and operator to array
                 inputs.append(result)
                 inputs.append(char!)
                 userAddedInput = false
@@ -102,26 +111,41 @@ class ViewController: UIViewController {
         }
 
         else if(char == Strings.equal){
+            //if array has input try to evaluate them
             if(inputs.count > 0){
-                inputs.append(result)
-                displayExpression()
-                updateResults(removeTrailingDecimals(evalExpression(arr: inputs)!))
-                justEvaluated = true
+                
+                //if user entered a number and pressed equal then add number to array and evaluate it
+                if(userAddedInput){
+                    inputs.append(result)
+                    displayExpression()
+                    updateResults(removeTrailingDecimals(evalExpression(arr: inputs)!))
+                    justEvaluated = true
+                }
+                //if last value in array is operator and remove that last array value and evaulate the expression
+                else if(operators.contains(inputs.last!)){
+                    inputs.removeLast()
+                    displayExpression()
+                    updateResults(removeTrailingDecimals(evalExpression(arr: inputs)!))
+                    justEvaluated = true
+                }
             }
         }
         else if(char == Strings.clear){
+            //remove reset display and inputs
             updateResults("")
             inputs.removeAll()
             displayExpression()
         }
         else if(resultLabel.text != nil){
+            //if user entered a number trigger flag
             userAddedInput = true
             updateResults(newResults)
         }
     }
     
+    //remove decimal if needed
     private func removeTrailingDecimals(_ resultDisplay:String)->String{
-        var splits = resultDisplay.split(separator: ".")
+        let splits = resultDisplay.split(separator: ".")
         if(splits.count > 1){
             if let rightValue = Float(splits[1]){
                 if(rightValue == 0){
@@ -132,6 +156,7 @@ class ViewController: UIViewController {
         return resultDisplay
     }
     
+    //display expression in the top of display
     private func displayExpression(){
         
         expressLabel.text = inputs.joined(separator: " ")
@@ -163,6 +188,7 @@ class ViewController: UIViewController {
             
     }
     
+    //function to do basic maths opteration such as additiaon substraction, mutilpcation and division
     private func _eval(_ left: Float, _ operatar: String, _ right: Float) -> Float? {
       var result: Float? = nil
         if operatar == Strings.plus {
@@ -177,49 +203,62 @@ class ViewController: UIViewController {
       return result
     }
 
+    //function use evaulation maths expression
     func evalExpression(arr: [String]) -> String? {
 
       var array = arr
 
-      //bodmas
 
+    //false to check if while loop should stop
       var shouldExit = false
 
+        //loop that continuiously evalute until the array length is 1
       while !shouldExit {
 
         var index = 0
         var newArray: [String] = []
-        for operatar in operators {
-          var didEvalated = false
+        //loop through the operator array in order of precedence
+          for operatar in operators {
+            //use to tell when an evaultion occured
+          var didEvaluated = false
 
+              //looping through the array input and searching for operators
           for y in 0...array.count - 1 {
-
+            
+              //if operator matches then evaluate the left and right numbers of that index
             if array[y] == operatar {
 
+                //get left and right number of operator index
               let left: Float = Float(array[y - 1])!
               let right: Float = Float(array[y + 1])!
 
+                //do basic evaluation
               let result: Float? = _eval(left, operatar, right)
 
               let leftIndex = y - 1
               let rightIndex = y + 1
 
+                //create new array
               for r in 0...array.count - 1 {
 
+                  //if the r the current index is equal to the operator index then append result to new array
                 if r == y {
                   newArray.append("\(result!)")
-                } else if r != leftIndex && r != rightIndex {
+                }
+                //if r the current index is not equal to left number index and the right number index then append that value to new array
+                  else if r != leftIndex && r != rightIndex {
                   newArray.append(array[r])
                 }
               }
 
-              didEvalated = true
+                //trigger did evaulate flag and break out of loop
+                didEvaluated = true
               break
             }
 
           }
-          //exit second loop
-          if didEvalated {
+          //check evailate flag and break out of loop if true
+          if didEvaluated {
             array = newArray
             break
           }
@@ -227,6 +266,7 @@ class ViewController: UIViewController {
           index = index + 1
         }
 
+          //exit while loop when the array length is one meaning it has not more expression to evalate
         if array.count == 1 {
           shouldExit = true
           return array[0]
