@@ -100,11 +100,12 @@ class ViewController: UIViewController {
                 updateResults(newResults,shouldFormat: false)
             }
         }
+
         else if(char == Strings.equal){
             if(inputs.count > 0){
                 inputs.append(result)
                 displayExpression()
-                updateResults(evalExpression(arr: inputs)!)
+                updateResults(removeTrailingDecimals(evalExpression(arr: inputs)!))
                 justEvaluated = true
             }
         }
@@ -119,6 +120,17 @@ class ViewController: UIViewController {
         }
     }
     
+    private func removeTrailingDecimals(_ resultDisplay:String)->String{
+        var splits = resultDisplay.split(separator: ".")
+        if(splits.count > 1){
+            if let rightValue = Float(splits[1]){
+                if(rightValue == 0){
+                    return String(splits[0])
+                }
+            }
+        }
+        return resultDisplay
+    }
     
     private func displayExpression(){
         
