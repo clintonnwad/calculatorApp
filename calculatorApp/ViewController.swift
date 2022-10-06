@@ -241,31 +241,31 @@ class ViewController: UIViewController {
           var didEvaluated = false
 
               //looping through the array input and searching for operators
-          for y in 0...array.count - 1 {
+          for index2 in 0...array.count - 1 {
             
               //if operator matches then evaluate the left and right numbers of that index
-            if array[y] == operatar {
+            if array[index2] == operatar {
 
                 //get left and right number of operator index
-              let left: Float = Float(array[y - 1])!
-              let right: Float = Float(array[y + 1])!
+              let leftOperand: Float = Float(array[index2 - 1])!
+              let rightOperand: Float = Float(array[index2 + 1])!
 
                 //do basic evaluation
-              let result: Float? = _eval(left, operatar, right)
+              let result: Float? = _eval(leftOperand, operatar, rightOperand)
 
-              let leftIndex = y - 1
-              let rightIndex = y + 1
+              let leftOperandIndex = index2 - 1
+              let rightOperandIndex = index2 + 1
 
                 //create new array
-              for r in 0...array.count - 1 {
+              for index3 in 0...array.count - 1 {
 
-                  //if the r the current index is equal to the operator index then append result to new array
-                if r == y {
+                  //if index3 is equal to the operator index then append result to new array
+                if index3 == index2 {
                   newArray.append("\(result!)")
                 }
-                //if r the current index is not equal to left number index and the right number index then append that value to new array
-                  else if r != leftIndex && r != rightIndex {
-                  newArray.append(array[r])
+                //if index3 is not equal to left number index and the right number index then append that value to new array
+                  else if index3 != leftOperandIndex && index3 != rightOperandIndex {
+                  newArray.append(array[index3])
                 }
               }
 
@@ -275,7 +275,7 @@ class ViewController: UIViewController {
             }
 
           }
-          //check evailate flag and break out of loop if true
+          //check evaluate flag and break out of loop if true
           if didEvaluated {
             array = newArray
             break
