@@ -191,7 +191,7 @@ class ViewController: UIViewController {
         else if(number.contains(".")){
             resultLabel.text = number
         }
-        else if(shouldFormat){
+        else if(shouldFormat && number != Strings.infinity){
             resultLabel.text = Number.format(number: number)
         }
         else{
@@ -216,7 +216,10 @@ class ViewController: UIViewController {
         } else if operatar == Strings.muliply {
         result = left * right
         } else if operatar == Strings.divide {
-        result = left / right
+            // Handle division by zero(0)
+            if( right != 0 ){
+                result = left / right
+            }
       }
       return result
     }
@@ -225,7 +228,6 @@ class ViewController: UIViewController {
     func evalExpression(arr: [String]) -> String? {
 
       var array = arr
-
 
     //false to check if while loop should stop
       var shouldExit = false
@@ -252,7 +254,9 @@ class ViewController: UIViewController {
 
                 //do basic evaluation
               let result: Float? = _eval(leftOperand, operatar, rightOperand)
-
+              if( result == nil ){
+                  return Strings.infinity
+              }
               let leftOperandIndex = index2 - 1
               let rightOperandIndex = index2 + 1
 

@@ -31,5 +31,6 @@ class Strings{
     static let dot = "."
     static let positiveNegative = "+/-"
     static let empty = ""
+    static let infinity = "Not Evaluatable"
 
 }
