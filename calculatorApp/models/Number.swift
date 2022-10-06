@@ -16,7 +16,7 @@
 //  https://github.com/clintonnwad/calculatorApp/commits/main
 //
 //  DATE LAST MODIFIED:
-//  September 25, 2022
+//  October 05, 2022
 
 
 import Foundation
@@ -52,7 +52,7 @@ class Number {
         if(isPositve){
             return formattedValue
         }else{
-            return "\(Strings.minus) \(formattedValue)"
+            return "\(Strings.minus)\(formattedValue)"
             
         }
     }

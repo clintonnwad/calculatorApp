@@ -16,7 +16,7 @@
 //  https://github.com/clintonnwad/calculatorApp/commits/main
 //
 //  DATE LAST MODIFIED:
-//  September 25, 2022
+//  October 02, 2022
 
 
 import UIKit
@@ -147,7 +147,7 @@ class ViewController: UIViewController {
             displayExpression()
         }
         else if(resultLabel.text != nil){
-            
+            // Limit the result to 8 decimal points
             let splits = result.split(separator: ".")
             if(splits.count > 1){
                 if(splits[1].count >= 8){
