@@ -32,6 +32,14 @@ class OperatorUIButton: UIButton {
             }
         }
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        if(enableDesign){
+            layer.cornerRadius = layer.bounds.height/2
+            layer.masksToBounds = layer.cornerRadius > 0
+        }
+    }
 
 
 }
