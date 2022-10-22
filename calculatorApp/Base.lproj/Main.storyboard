@@ -351,7 +351,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="x">
                                             <fontDescription key="titleFontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
-                                            <color key="baseBackgroundColor" red="0.15062716600000001" green="0.16106361150000001" blue="0.1922501922" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseBackgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
@@ -368,7 +368,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="-">
                                             <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="43"/>
-                                            <color key="baseBackgroundColor" red="0.15062716600000001" green="0.16106361150000001" blue="0.1922501922" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseBackgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
@@ -385,7 +385,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="+">
                                             <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="42"/>
-                                            <color key="baseBackgroundColor" red="0.15062716600000001" green="0.16106361150000001" blue="0.1922501922" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseBackgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
@@ -504,6 +504,10 @@
                                 <exclude reference="44h-3C-Gsd"/>
                                 <exclude reference="WwH-9q-z4f"/>
                                 <exclude reference="7T9-vx-mIt"/>
+                                <exclude reference="2W3-OV-Xg3"/>
+                                <exclude reference="ItG-8G-4P9"/>
+                                <exclude reference="ONr-ok-wMa"/>
+                                <exclude reference="y06-TT-0kD"/>
                                 <exclude reference="7Va-1L-paG"/>
                                 <exclude reference="CR8-4l-VLw"/>
                                 <exclude reference="EoL-dn-zxe"/>
@@ -512,18 +516,11 @@
                                 <exclude reference="Pqe-2D-S0n"/>
                                 <exclude reference="PsK-CF-uKA"/>
                                 <exclude reference="yM5-vW-Vnn"/>
-                                <exclude reference="6b6-Ki-hGh"/>
-                                <exclude reference="L9F-cJ-vO3"/>
-                                <exclude reference="M1d-ng-l3h"/>
                                 <exclude reference="4SQ-8s-pvV"/>
                                 <exclude reference="Npf-oF-zZt"/>
                                 <exclude reference="duQ-V8-0mi"/>
                                 <exclude reference="ifA-lC-kXt"/>
                                 <exclude reference="rBP-6A-I3H"/>
-                                <exclude reference="2W3-OV-Xg3"/>
-                                <exclude reference="ItG-8G-4P9"/>
-                                <exclude reference="ONr-ok-wMa"/>
-                                <exclude reference="y06-TT-0kD"/>
                                 <exclude reference="18t-3k-c1x"/>
                                 <exclude reference="TpK-oq-RT4"/>
                                 <exclude reference="flQ-Ro-OMB"/>
@@ -538,6 +535,9 @@
                                 <exclude reference="D0f-9o-D5w"/>
                                 <exclude reference="6Vh-aR-8Uf"/>
                                 <exclude reference="8j6-xQ-0Se"/>
+                                <exclude reference="6b6-Ki-hGh"/>
+                                <exclude reference="L9F-cJ-vO3"/>
+                                <exclude reference="M1d-ng-l3h"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -551,10 +551,10 @@
                                 <exclude reference="fFz-7t-hhm"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="PsK-CF-uKA"/>
-                                <include reference="yM5-vW-Vnn"/>
                                 <include reference="ONr-ok-wMa"/>
                                 <include reference="y06-TT-0kD"/>
+                                <include reference="PsK-CF-uKA"/>
+                                <include reference="yM5-vW-Vnn"/>
                                 <include reference="flQ-Ro-OMB"/>
                                 <include reference="kSY-hC-qvE"/>
                                 <include reference="qrB-Ta-Bqh"/>
@@ -584,22 +584,19 @@
                                 <include reference="44h-3C-Gsd"/>
                                 <include reference="WwH-9q-z4f"/>
                                 <include reference="7T9-vx-mIt"/>
+                                <include reference="2W3-OV-Xg3"/>
+                                <include reference="ItG-8G-4P9"/>
                                 <include reference="7Va-1L-paG"/>
                                 <include reference="CR8-4l-VLw"/>
                                 <include reference="EoL-dn-zxe"/>
                                 <include reference="HPY-rZ-Vu9"/>
                                 <include reference="O1B-Re-jov"/>
                                 <include reference="Pqe-2D-S0n"/>
-                                <include reference="6b6-Ki-hGh"/>
-                                <include reference="L9F-cJ-vO3"/>
-                                <include reference="M1d-ng-l3h"/>
                                 <include reference="4SQ-8s-pvV"/>
                                 <include reference="Npf-oF-zZt"/>
                                 <include reference="duQ-V8-0mi"/>
                                 <include reference="ifA-lC-kXt"/>
                                 <include reference="rBP-6A-I3H"/>
-                                <include reference="2W3-OV-Xg3"/>
-                                <include reference="ItG-8G-4P9"/>
                                 <include reference="18t-3k-c1x"/>
                                 <include reference="TpK-oq-RT4"/>
                                 <include reference="gBv-Ab-dPg"/>
@@ -607,6 +604,9 @@
                                 <include reference="Yv5-xX-PFN"/>
                                 <include reference="D0f-9o-D5w"/>
                                 <include reference="6Vh-aR-8Uf"/>
+                                <include reference="6b6-Ki-hGh"/>
+                                <include reference="L9F-cJ-vO3"/>
+                                <include reference="M1d-ng-l3h"/>
                             </mask>
                         </variation>
                     </view>
