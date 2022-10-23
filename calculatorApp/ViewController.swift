@@ -49,18 +49,28 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     //operate in order of precedence (BODMAS)
     let operators: [String] = [Strings.divide, Strings.muliply, Strings.plus, Strings.minus]
 
-    
-    @IBAction func onPress(_ sender: UIButton) {
-        
-        
-        
-        //clear display if user presses any button after just doing an evaluation
+    func clearCalculator(){
         if(justEvaluated){
             updateResults("")
             inputs.removeAll()
             displayExpression()
             justEvaluated = false
         }
+    }
+    
+    func updateHistory(){
+        if(resultLabel.text! != Strings.infinity){
+            history.insert(CalculatorHistory(expression: inputs.joined(separator: " "), result: resultLabel.text!),at: 0)
+            self.tableView.reloadData()
+        }
+    }
+    
+    @IBAction func onPress(_ sender: UIButton) {
+        
+        
+        
+        //clear display if user presses any button after just doing an evaluation
+        clearCalculator()
         
         
         if(resultLabel.text == nil){
@@ -208,8 +218,9 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
                     updateResults(removeTrailingDecimals(evalExpression(arr: inputs)!))
                     justEvaluated = true
                 }
-                history.insert(CalculatorHistory(expression: inputs.joined(separator: " "), result: resultLabel.text!),at: 0)
-                self.tableView.reloadData()
+                
+                updateHistory()
+              
 
                 
             }
@@ -383,10 +394,22 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         return history.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        clearCalculator()
+        if(!history[indexPath.row].result.contains("e")){
+            updateResults(history[indexPath.row].result)
+            userAddedInput = true
+        }
+
+    }
+    
+
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        var expressionLabel:UILabel = cell.viewWithTag(1) as! UILabel
-        var resultLabel:UILabel = cell.viewWithTag(2) as! UILabel
+        cell.selectionStyle = .none
+        let expressionLabel:UILabel = cell.viewWithTag(1) as! UILabel
+        let resultLabel:UILabel = cell.viewWithTag(2) as! UILabel
         expressionLabel.text = history[indexPath.row].expression
         resultLabel.text = history[indexPath.row].result
 
