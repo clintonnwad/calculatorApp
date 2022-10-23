@@ -35,6 +35,10 @@ class Strings{
     static let square = "x2"
     static let squareroot = "sqrt"
     static let random = "Rand"
+    static let radians = "rad"
+    static let degrees = "deg"
+    static let inf = "∞"
+
     static let factorial = "x!"
     static let pi = "pi"
 

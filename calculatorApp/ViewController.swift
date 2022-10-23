@@ -37,6 +37,8 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     //flag which is set when a evaluation happens
     var justEvaluated = false
     
+    var isUsingRadians = false
+    
     //stores expression as array
     var inputs:[String] = []
     
@@ -65,16 +67,29 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         var newResults = "\(resultLabel!.text!)\(sender.titleLabel!.text!)"
         let result =  Number.clean(resultLabel!.text!)!
         
+        let value = Float(result)
+        
+        var degreesConvertion = Float.pi/180
+        if(isUsingRadians){
+            degreesConvertion = 1
+        }
 
         
-            
+        if(char == Strings.radians || char == Strings.degrees){
+            isUsingRadians = !isUsingRadians
+            if(sender.titleLabel?.text == Strings.radians){
+                sender.setTitle(Strings.degrees, for: .normal)
+            }
+            else{
+                sender.setTitle(Strings.radians, for: .normal)
+            }
+        }
         //handle backspace
-        if(char == Strings.backspace){
+        else if(char == Strings.backspace){
             updateResults(String(result.prefix(result.count-1)))
         }
         //handle when percent is press
         else if(char == Strings.percentage){
-            let value = Float(result)
             if(value != nil) {
                 let percentageValue = value!/100
                 if(percentageValue != 0){
@@ -82,11 +97,49 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
                 }
             }
         }
+        else if(char == Strings.squareroot){
+            if(value != nil) {
+                let squareRoot = value!.squareRoot()
+                userAddedInput = true
+                updateResults("\(squareRoot)")
+            }
+        }
+        else if(char == Strings.square){
+            if(value != nil) {
+                let sqaure = value!*value!
+                userAddedInput = true
+                updateResults("\(sqaure)")
+            }
+        }
+        else if(char == Strings.sin){
+            if(value != nil) {
+                let sinValue = sin(value!*degreesConvertion)
+                userAddedInput = true
+                updateResults("\(sinValue)")
+            }
+        }
+        else if(char == Strings.cos){
+            if(value != nil) {
+                let cosValue = cos(value!*degreesConvertion)
+                userAddedInput = true
+                updateResults("\(cosValue)")
+            }
+        }
+        else if(char == Strings.tan){
+            if(value != nil) {
+                let tanValue = tan(value!*degreesConvertion)
+                userAddedInput = true
+                updateResults("\(tanValue)")
+            }
+        }
+        else if(char == Strings.pi){
+            userAddedInput = true
+            updateResults("\( Float.pi)")
+        }
         else if(char == Strings.random){
             let randomNumebr = Float.random(in: 0...1)
             userAddedInput = true
             updateResults("\(randomNumebr)")
-            
         }
         //handle operators
         else if(char == Strings.plus
@@ -193,6 +246,11 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     //update Result label with option to format or not format number
     private func updateResults(_ number:String,shouldFormat:Bool = true) {
+        
+        if(number.contains(Strings.inf) || number == "inf"){
+            updateResults(Strings.infinity)
+            return
+        }
         if(number == "" || number == "\(Strings.minus) "){
             resultLabel.text = "0"
             //reset sign
