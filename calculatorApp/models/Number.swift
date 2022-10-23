@@ -2,7 +2,7 @@
 //  NumberFormatter.swift
 //  calculatorApp
 //
-//  Created by Jovi on 24/09/2022.
+//  Created by Cee Jaiy on 2022-09-21.
 //
 //  GROUP NUMBER: 15
 //  NAMES:
@@ -11,12 +11,13 @@
 //
 //  DESCRIPTION:
 //  Simple Calculator app that can perform basic calculator operations
+//  History and more operation buttons added on left orientation change
 //
 //  REVISION HISTORY:
 //  https://github.com/clintonnwad/calculatorApp/commits/main
 //
 //  DATE LAST MODIFIED:
-//  October 05, 2022
+//  October 23, 2022
 
 
 import Foundation

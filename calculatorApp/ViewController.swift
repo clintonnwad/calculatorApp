@@ -11,12 +11,13 @@
 //
 //  DESCRIPTION:
 //  Simple Calculator app that can perform basic calculator operations
+//  History and more operation buttons added on left orientation change
 //
 //  REVISION HISTORY:
 //  https://github.com/clintonnwad/calculatorApp/commits/main
 //
 //  DATE LAST MODIFIED:
-//  October 02, 2022
+//  October 23, 2022
 
 
 import UIKit
