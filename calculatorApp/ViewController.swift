@@ -21,10 +21,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource  {
     
 
     @IBOutlet weak var expressLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var resultLabel: UILabel!
     
     //flag to keep track of state of number
@@ -56,6 +57,9 @@ class ViewController: UIViewController {
         }
         
         
+        if(resultLabel.text == nil){
+            resultLabel.text = "0"
+        }
         
         let char = sender.titleLabel!.text
         var newResults = "\(resultLabel!.text!)\(sender.titleLabel!.text!)"
@@ -297,6 +301,14 @@ class ViewController: UIViewController {
     }
 
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        return cell
+    }
     
     //force status bar color change
     override var preferredStatusBarStyle: UIStatusBarStyle {
