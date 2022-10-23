@@ -756,9 +756,10 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zdw-MM-cuN">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="73" estimatedRowHeight="73" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zdw-MM-cuN">
                                 <rect key="frame" x="0.0" y="147" width="388" height="243"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="73" id="3eo-ax-Qwm">
@@ -771,26 +772,37 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20+2*3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ci6-9p-A5c">
                                                     <rect key="frame" x="0.0" y="8.0000000000000018" width="368" height="25.666666666666671"/>
                                                     <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.64705884459999996" green="0.64705890420000001" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20+2*3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcT-qa-12U">
                                                     <rect key="frame" x="30" y="26" width="338" height="39"/>
                                                     <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="26"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYC-Es-JLe">
+                                                    <rect key="frame" x="20" y="72" width="348" height="1"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.057823129251700682" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="LtF-P0-rDq"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="vYC-Es-JLe" secondAttribute="trailing" constant="20" id="9HA-hU-J1X"/>
                                                 <constraint firstItem="Ci6-9p-A5c" firstAttribute="leading" secondItem="qmF-6x-SmO" secondAttribute="leading" id="C7R-h1-dUh"/>
+                                                <constraint firstItem="vYC-Es-JLe" firstAttribute="leading" secondItem="qmF-6x-SmO" secondAttribute="leading" constant="20" id="IdJ-oB-cAF"/>
                                                 <constraint firstAttribute="trailing" secondItem="Ci6-9p-A5c" secondAttribute="trailing" constant="20" id="JjK-aU-87r"/>
                                                 <constraint firstItem="PcT-qa-12U" firstAttribute="leading" secondItem="qmF-6x-SmO" secondAttribute="leadingMargin" constant="10" id="M4R-gV-CUy"/>
                                                 <constraint firstAttribute="trailing" secondItem="PcT-qa-12U" secondAttribute="trailing" constant="20" id="NIm-pH-i3q"/>
                                                 <constraint firstItem="PcT-qa-12U" firstAttribute="top" secondItem="Ci6-9p-A5c" secondAttribute="bottom" constant="-7.6666666666666714" id="UlS-dD-a07"/>
+                                                <constraint firstAttribute="bottom" secondItem="vYC-Es-JLe" secondAttribute="bottom" id="dlj-Jx-Jvt"/>
                                                 <constraint firstItem="Ci6-9p-A5c" firstAttribute="top" secondItem="qmF-6x-SmO" secondAttribute="top" constant="8" id="iaF-x7-mHv"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

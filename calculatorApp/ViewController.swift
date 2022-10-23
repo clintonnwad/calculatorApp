@@ -299,7 +299,10 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         }
       }
     }
-
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 73
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
