@@ -27,7 +27,8 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     @IBOutlet weak var expressLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var resultLabel: UILabel!
-    
+    @IBOutlet weak var radianIndicatorLabel: UILabel!
+
     //flag to keep track of state of number
     var isNumberPostive = true
     
@@ -79,9 +80,12 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             isUsingRadians = !isUsingRadians
             if(sender.titleLabel?.text == Strings.radians){
                 sender.setTitle(Strings.degrees, for: .normal)
+                radianIndicatorLabel.isHidden = false
             }
             else{
                 sender.setTitle(Strings.radians, for: .normal)
+                radianIndicatorLabel.isHidden = true
+
             }
         }
         //handle backspace
