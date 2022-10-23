@@ -515,10 +515,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XH0-DW-QEN">
-                                <rect key="frame" x="495.66666666666669" y="167" width="59.333333333333314" height="189"/>
+                                <rect key="frame" x="488" y="167" width="55" height="189"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKE-kG-IJC" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="136.33333333333331" width="59.333333333333336" height="59.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="138.66666666666669" width="55" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="FKE-kG-IJC" secondAttribute="height" multiplier="1:1" id="Ce9-BA-JyI"/>
                                         </constraints>
@@ -535,7 +535,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4EX-rC-M70" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="88.666666666666657" width="59.333333333333336" height="59.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="91" width="55" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="4EX-rC-M70" secondAttribute="height" multiplier="1:1" id="f2A-O4-Cxa"/>
                                         </constraints>
@@ -552,7 +552,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytw-Lx-6mZ" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="-6.6666666666666572" width="59.333333333333336" height="59.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="-4.6666666666666572" width="55" height="55"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="&lt;-">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
@@ -567,7 +567,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ku-wT-m2z" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="41" width="59.333333333333336" height="59.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="43" width="55" height="55"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="C">
                                             <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="30"/>
@@ -581,7 +581,7 @@
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backspace-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Wg3-2O-E9o">
-                                        <rect key="frame" x="16" y="13" width="25" height="20"/>
+                                        <rect key="frame" x="14" y="13" width="25" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="C2J-ul-kGh"/>
                                             <constraint firstAttribute="width" constant="25" id="qGW-X2-S6c"/>
@@ -637,10 +637,10 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVI-Pk-tTy">
-                                <rect key="frame" x="432.66666666666669" y="167" width="59.333333333333314" height="189"/>
+                                <rect key="frame" x="413" y="167" width="55" height="189"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWT-0g-9Gd" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="136.33333333333331" width="59.333333333333336" height="59.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="138.66666666666669" width="55" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="VWT-0g-9Gd" secondAttribute="height" multiplier="1:1" id="BNS-aI-8Bd"/>
                                         </constraints>
@@ -657,7 +657,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pP-GK-dFv" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="88.666666666666657" width="59.333333333333336" height="59.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="91" width="55" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="9pP-GK-dFv" secondAttribute="height" multiplier="1:1" id="af7-mr-Drn"/>
                                         </constraints>
@@ -674,7 +674,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDc-dY-hQ5" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="-6.6666666666666572" width="59.333333333333336" height="59.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="-4.6666666666666572" width="55" height="55"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="&lt;-">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
@@ -689,7 +689,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqa-gT-8IB" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="41" width="59.333333333333336" height="59.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="43" width="55" height="55"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="C">
                                             <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="30"/>
@@ -703,7 +703,7 @@
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backspace-icon" translatesAutoresizingMaskIntoConstraints="NO" id="inY-hQ-Cjs">
-                                        <rect key="frame" x="16" y="13" width="25" height="20"/>
+                                        <rect key="frame" x="14" y="13" width="25" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="deb-gk-MRf"/>
                                             <constraint firstAttribute="width" constant="25" id="jTy-o6-5pD"/>
@@ -778,8 +778,7 @@
                             <constraint firstItem="IDc-dY-hQ5" firstAttribute="centerY" secondItem="Ytw-Lx-6mZ" secondAttribute="centerY" id="1t4-fo-f4O"/>
                             <constraint firstItem="fOA-UF-kxI" firstAttribute="centerY" secondItem="lFC-dq-6rR" secondAttribute="centerY" id="29x-gj-xJt"/>
                             <constraint firstItem="bhC-YO-gIS" firstAttribute="top" secondItem="eRK-A4-mtB" secondAttribute="bottom" constant="5" id="2W3-OV-Xg3"/>
-                            <constraint firstItem="XH0-DW-QEN" firstAttribute="leading" secondItem="FVI-Pk-tTy" secondAttribute="trailing" constant="3.6699999999999999" id="2ha-hc-wA8"/>
-                            <constraint firstItem="sxk-S6-D5k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3py-PR-AKX"/>
+                            <constraint firstItem="XH0-DW-QEN" firstAttribute="leading" secondItem="FVI-Pk-tTy" secondAttribute="trailing" constant="20" id="2ha-hc-wA8"/>
                             <constraint firstItem="ITC-W0-J1r" firstAttribute="centerX" secondItem="fMD-1y-J7J" secondAttribute="centerX" id="44h-3C-Gsd"/>
                             <constraint firstItem="sxk-S6-D5k" firstAttribute="top" secondItem="U3s-4C-rDv" secondAttribute="bottom" id="4SQ-8s-pvV"/>
                             <constraint firstItem="mRV-QI-LtR" firstAttribute="centerY" secondItem="8uQ-GV-CPB" secondAttribute="centerY" id="6Vh-aR-8Uf"/>
@@ -790,7 +789,7 @@
                             <constraint firstItem="U3s-4C-rDv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="88e-WU-R2z"/>
                             <constraint firstItem="mRV-QI-LtR" firstAttribute="centerY" secondItem="8uQ-GV-CPB" secondAttribute="centerY" id="8j6-xQ-0Se"/>
                             <constraint firstItem="XH0-DW-QEN" firstAttribute="height" secondItem="gDa-pQ-iTn" secondAttribute="height" id="99q-fp-eVm"/>
-                            <constraint firstItem="XH0-DW-QEN" firstAttribute="width" secondItem="gDa-pQ-iTn" secondAttribute="width" multiplier="1.07879" id="9Xg-wn-f4f"/>
+                            <constraint firstItem="XH0-DW-QEN" firstAttribute="width" secondItem="gDa-pQ-iTn" secondAttribute="width" id="9Xg-wn-f4f"/>
                             <constraint firstItem="FKE-kG-IJC" firstAttribute="centerY" secondItem="bCo-ZK-H1S" secondAttribute="centerY" id="Aef-F1-jwP"/>
                             <constraint firstItem="XH0-DW-QEN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="AuN-hX-8Jg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eRK-A4-mtB" secondAttribute="trailing" constant="32" id="CR8-4l-VLw"/>
@@ -824,7 +823,7 @@
                             <constraint firstItem="h9M-Gp-oZL" firstAttribute="leading" secondItem="bhC-YO-gIS" secondAttribute="trailing" constant="10" id="TpK-oq-RT4"/>
                             <constraint firstItem="XaU-A3-J2F" firstAttribute="centerX" secondItem="1kZ-IE-YuT" secondAttribute="centerX" id="WwH-9q-z4f"/>
                             <constraint firstItem="yor-7D-FbG" firstAttribute="centerY" secondItem="oM6-7q-eP5" secondAttribute="centerY" id="Yv5-xX-PFN"/>
-                            <constraint firstItem="gDa-pQ-iTn" firstAttribute="leading" secondItem="XH0-DW-QEN" secondAttribute="trailing" constant="8" symbolic="YES" id="bFk-En-3eF"/>
+                            <constraint firstItem="gDa-pQ-iTn" firstAttribute="leading" secondItem="XH0-DW-QEN" secondAttribute="trailing" constant="20" id="bFk-En-3eF"/>
                             <constraint firstItem="m31-kG-HXG" firstAttribute="centerX" secondItem="sZ0-d8-1nd" secondAttribute="centerX" id="bhZ-RR-KVV"/>
                             <constraint firstItem="ynE-Ex-gvF" firstAttribute="centerY" secondItem="sZ0-d8-1nd" secondAttribute="centerY" id="bkf-Xs-0BL"/>
                             <constraint firstAttribute="trailing" secondItem="sxk-S6-D5k" secondAttribute="trailing" id="bw1-ki-FVj"/>
@@ -836,6 +835,7 @@
                             <constraint firstItem="sxk-S6-D5k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ifA-lC-kXt"/>
                             <constraint firstItem="h9M-Gp-oZL" firstAttribute="leading" secondItem="bhC-YO-gIS" secondAttribute="trailing" constant="5" id="kSY-hC-qvE"/>
                             <constraint firstItem="gDa-pQ-iTn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ku1-9x-l67"/>
+                            <constraint firstItem="FVI-Pk-tTy" firstAttribute="leading" secondItem="sxk-S6-D5k" secondAttribute="leading" constant="25" id="lKp-Ar-vcS"/>
                             <constraint firstItem="FVI-Pk-tTy" firstAttribute="width" secondItem="XH0-DW-QEN" secondAttribute="width" id="pGR-Xh-a9R"/>
                             <constraint firstItem="gDa-pQ-iTn" firstAttribute="centerY" secondItem="h9M-Gp-oZL" secondAttribute="centerY" id="qkA-fL-1mm"/>
                             <constraint firstItem="h9M-Gp-oZL" firstAttribute="centerY" secondItem="bhC-YO-gIS" secondAttribute="centerY" id="qrB-Ta-Bqh"/>
@@ -876,7 +876,6 @@
                                 <exclude reference="Pqe-2D-S0n"/>
                                 <exclude reference="PsK-CF-uKA"/>
                                 <exclude reference="yM5-vW-Vnn"/>
-                                <exclude reference="3py-PR-AKX"/>
                                 <exclude reference="4SQ-8s-pvV"/>
                                 <exclude reference="DaB-pG-HLl"/>
                                 <exclude reference="HMs-gV-Lc5"/>
@@ -891,16 +890,17 @@
                                 <exclude reference="ONV-5U-b1D"/>
                                 <exclude reference="TAE-94-PE0"/>
                                 <exclude reference="d2e-ZH-JIb"/>
+                                <exclude reference="lKp-Ar-vcS"/>
                                 <exclude reference="pGR-Xh-a9R"/>
                                 <exclude reference="1t4-fo-f4O"/>
                                 <exclude reference="PhP-LM-cbr"/>
                                 <exclude reference="zlE-Ao-Fb7"/>
+                                <exclude reference="JY6-sc-onW"/>
                                 <exclude reference="2ha-hc-wA8"/>
                                 <exclude reference="99q-fp-eVm"/>
                                 <exclude reference="9Xg-wn-f4f"/>
                                 <exclude reference="AuN-hX-8Jg"/>
                                 <exclude reference="QMS-59-0ob"/>
-                                <exclude reference="JY6-sc-onW"/>
                                 <exclude reference="uGs-Bf-wV9"/>
                                 <exclude reference="0Ka-VG-1bg"/>
                                 <exclude reference="Aef-F1-jwP"/>
@@ -949,23 +949,23 @@
                             <mask key="constraints">
                                 <include reference="PsK-CF-uKA"/>
                                 <include reference="yM5-vW-Vnn"/>
-                                <include reference="3py-PR-AKX"/>
                                 <include reference="DaB-pG-HLl"/>
                                 <include reference="HMs-gV-Lc5"/>
                                 <include reference="bw1-ki-FVj"/>
                                 <include reference="ONV-5U-b1D"/>
                                 <include reference="TAE-94-PE0"/>
                                 <include reference="d2e-ZH-JIb"/>
+                                <include reference="lKp-Ar-vcS"/>
                                 <include reference="pGR-Xh-a9R"/>
                                 <include reference="1t4-fo-f4O"/>
                                 <include reference="PhP-LM-cbr"/>
                                 <include reference="zlE-Ao-Fb7"/>
+                                <include reference="JY6-sc-onW"/>
                                 <include reference="2ha-hc-wA8"/>
                                 <include reference="99q-fp-eVm"/>
                                 <include reference="9Xg-wn-f4f"/>
                                 <include reference="AuN-hX-8Jg"/>
                                 <include reference="QMS-59-0ob"/>
-                                <include reference="JY6-sc-onW"/>
                                 <include reference="uGs-Bf-wV9"/>
                                 <include reference="0Ka-VG-1bg"/>
                                 <include reference="Aef-F1-jwP"/>
