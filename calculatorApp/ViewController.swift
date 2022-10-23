@@ -82,6 +82,12 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
                 }
             }
         }
+        else if(char == Strings.random){
+            let randomNumebr = Float.random(in: 0...1)
+            userAddedInput = true
+            updateResults("\(randomNumebr)")
+            
+        }
         //handle operators
         else if(char == Strings.plus
                 || char == Strings.minus

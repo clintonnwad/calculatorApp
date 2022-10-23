@@ -707,7 +707,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDc-dY-hQ5" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="-4.6666666666666572" width="55" height="55"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="&lt;-">
+                                        <buttonConfiguration key="configuration" style="filled" title="pi">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -733,11 +733,11 @@
                                             <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jdv-un-pQT"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sq" translatesAutoresizingMaskIntoConstraints="NO" id="inY-hQ-Cjs">
-                                        <rect key="frame" x="17" y="10" width="25" height="20"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pi" translatesAutoresizingMaskIntoConstraints="NO" id="inY-hQ-Cjs">
+                                        <rect key="frame" x="22" y="10" width="15" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="deb-gk-MRf"/>
-                                            <constraint firstAttribute="width" constant="25" id="jTy-o6-5pD"/>
+                                            <constraint firstAttribute="width" constant="15" id="jTy-o6-5pD"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -1206,7 +1206,7 @@
             <size key="intrinsicContentSize" width="44" height="38"/>
         </designable>
         <designable name="IDc-dY-hQ5">
-            <size key="intrinsicContentSize" width="56" height="50"/>
+            <size key="intrinsicContentSize" width="47.666666666666664" height="50"/>
         </designable>
         <designable name="ITC-W0-J1r">
             <size key="intrinsicContentSize" width="56" height="50"/>
@@ -1251,6 +1251,7 @@
     <resources>
         <image name="backspace-icon" width="23" height="16"/>
         <image name="factorial" width="19" height="14"/>
+        <image name="pi" width="12" height="12"/>
         <image name="sq" width="18" height="18"/>
         <image name="sqrt" width="20" height="14"/>
     </resources>

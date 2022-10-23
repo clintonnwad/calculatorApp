@@ -29,6 +29,18 @@ class Strings{
     static let percentage = "%"
     static let clear = "C"
     static let dot = "."
+    static let sin = "sin"
+    static let cos = "cos"
+    static let tan = "tan"
+    static let square = "x2"
+    static let squareroot = "sqrt"
+    static let random = "Rand"
+    static let factorial = "x!"
+    static let pi = "pi"
+
+
+    
+
     static let positiveNegative = "+/-"
     static let empty = ""
     static let infinity = "Not Evaluatable"
