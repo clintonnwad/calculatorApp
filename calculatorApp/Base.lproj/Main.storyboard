@@ -756,6 +756,44 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zdw-MM-cuN">
+                                <rect key="frame" x="0.0" y="147" width="388" height="243"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="73" id="3eo-ax-Qwm">
+                                        <rect key="frame" x="0.0" y="50" width="388" height="73"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3eo-ax-Qwm" id="qmF-6x-SmO">
+                                            <rect key="frame" x="0.0" y="0.0" width="388" height="73"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20+2*3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ci6-9p-A5c">
+                                                    <rect key="frame" x="0.0" y="8.0000000000000018" width="368" height="25.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20+2*3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcT-qa-12U">
+                                                    <rect key="frame" x="30" y="26" width="338" height="39"/>
+                                                    <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Ci6-9p-A5c" firstAttribute="leading" secondItem="qmF-6x-SmO" secondAttribute="leading" id="C7R-h1-dUh"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ci6-9p-A5c" secondAttribute="trailing" constant="20" id="JjK-aU-87r"/>
+                                                <constraint firstItem="PcT-qa-12U" firstAttribute="leading" secondItem="qmF-6x-SmO" secondAttribute="leadingMargin" constant="10" id="M4R-gV-CUy"/>
+                                                <constraint firstAttribute="trailing" secondItem="PcT-qa-12U" secondAttribute="trailing" constant="20" id="NIm-pH-i3q"/>
+                                                <constraint firstItem="PcT-qa-12U" firstAttribute="top" secondItem="Ci6-9p-A5c" secondAttribute="bottom" constant="-7.6666666666666714" id="UlS-dD-a07"/>
+                                                <constraint firstItem="Ci6-9p-A5c" firstAttribute="top" secondItem="qmF-6x-SmO" secondAttribute="top" constant="8" id="iaF-x7-mHv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U3s-4C-rDv">
                                 <rect key="frame" x="20" y="280.66666666666669" width="345" height="90"/>
                                 <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="60"/>
@@ -817,10 +855,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bhC-YO-gIS" secondAttribute="bottom" constant="10" id="Pqe-2D-S0n"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h9M-Gp-oZL" secondAttribute="trailing" id="PsK-CF-uKA"/>
                             <constraint firstItem="Ytw-Lx-6mZ" firstAttribute="centerY" secondItem="ynE-Ex-gvF" secondAttribute="centerY" id="QMS-59-0ob"/>
+                            <constraint firstItem="zdw-MM-cuN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="R3b-UJ-aBO"/>
+                            <constraint firstItem="zdw-MM-cuN" firstAttribute="height" secondItem="sxk-S6-D5k" secondAttribute="height" multiplier="0.829352" id="RpR-Ob-bML"/>
                             <constraint firstItem="yor-7D-FbG" firstAttribute="centerY" secondItem="oM6-7q-eP5" secondAttribute="centerY" id="RzG-Lg-Ymh"/>
                             <constraint firstItem="U3s-4C-rDv" firstAttribute="top" secondItem="fFz-7t-hhm" secondAttribute="bottom" constant="-10" id="S57-oM-Caj"/>
                             <constraint firstItem="FVI-Pk-tTy" firstAttribute="centerY" secondItem="XH0-DW-QEN" secondAttribute="centerY" id="TAE-94-PE0"/>
                             <constraint firstItem="h9M-Gp-oZL" firstAttribute="leading" secondItem="bhC-YO-gIS" secondAttribute="trailing" constant="10" id="TpK-oq-RT4"/>
+                            <constraint firstAttribute="bottom" secondItem="zdw-MM-cuN" secondAttribute="bottom" id="UMe-Kv-iga"/>
                             <constraint firstItem="XaU-A3-J2F" firstAttribute="centerX" secondItem="1kZ-IE-YuT" secondAttribute="centerX" id="WwH-9q-z4f"/>
                             <constraint firstItem="yor-7D-FbG" firstAttribute="centerY" secondItem="oM6-7q-eP5" secondAttribute="centerY" id="Yv5-xX-PFN"/>
                             <constraint firstItem="gDa-pQ-iTn" firstAttribute="leading" secondItem="XH0-DW-QEN" secondAttribute="trailing" constant="20" id="bFk-En-3eF"/>
@@ -841,6 +882,7 @@
                             <constraint firstItem="h9M-Gp-oZL" firstAttribute="centerY" secondItem="bhC-YO-gIS" secondAttribute="centerY" id="qrB-Ta-Bqh"/>
                             <constraint firstItem="sxk-S6-D5k" firstAttribute="top" secondItem="eRK-A4-mtB" secondAttribute="top" constant="-30" id="rBP-6A-I3H"/>
                             <constraint firstItem="4Ku-wT-m2z" firstAttribute="centerY" secondItem="yYN-dK-tJG" secondAttribute="centerY" id="uGs-Bf-wV9"/>
+                            <constraint firstItem="sxk-S6-D5k" firstAttribute="leading" secondItem="zdw-MM-cuN" secondAttribute="trailing" id="uhq-ee-Yrs"/>
                             <constraint firstItem="bhC-YO-gIS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="y06-TT-0kD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bhC-YO-gIS" secondAttribute="trailing" constant="60" id="yM5-vW-Vnn"/>
                             <constraint firstItem="9pP-GK-dFv" firstAttribute="centerY" secondItem="4EX-rC-M70" secondAttribute="centerY" id="zlE-Ao-Fb7"/>
@@ -855,6 +897,7 @@
                                 <exclude reference="gDa-pQ-iTn"/>
                                 <exclude reference="XH0-DW-QEN"/>
                                 <exclude reference="FVI-Pk-tTy"/>
+                                <exclude reference="zdw-MM-cuN"/>
                                 <exclude reference="U3s-4C-rDv"/>
                                 <exclude reference="fFz-7t-hhm"/>
                             </mask>
@@ -876,6 +919,9 @@
                                 <exclude reference="Pqe-2D-S0n"/>
                                 <exclude reference="PsK-CF-uKA"/>
                                 <exclude reference="yM5-vW-Vnn"/>
+                                <exclude reference="6b6-Ki-hGh"/>
+                                <exclude reference="L9F-cJ-vO3"/>
+                                <exclude reference="M1d-ng-l3h"/>
                                 <exclude reference="4SQ-8s-pvV"/>
                                 <exclude reference="DaB-pG-HLl"/>
                                 <exclude reference="HMs-gV-Lc5"/>
@@ -884,9 +930,7 @@
                                 <exclude reference="duQ-V8-0mi"/>
                                 <exclude reference="ifA-lC-kXt"/>
                                 <exclude reference="rBP-6A-I3H"/>
-                                <exclude reference="6b6-Ki-hGh"/>
-                                <exclude reference="L9F-cJ-vO3"/>
-                                <exclude reference="M1d-ng-l3h"/>
+                                <exclude reference="uhq-ee-Yrs"/>
                                 <exclude reference="ONV-5U-b1D"/>
                                 <exclude reference="TAE-94-PE0"/>
                                 <exclude reference="d2e-ZH-JIb"/>
@@ -943,6 +987,7 @@
                                 <include reference="gDa-pQ-iTn"/>
                                 <include reference="XH0-DW-QEN"/>
                                 <include reference="FVI-Pk-tTy"/>
+                                <include reference="zdw-MM-cuN"/>
                                 <exclude reference="U3s-4C-rDv"/>
                                 <exclude reference="fFz-7t-hhm"/>
                             </mask>
@@ -952,6 +997,7 @@
                                 <include reference="DaB-pG-HLl"/>
                                 <include reference="HMs-gV-Lc5"/>
                                 <include reference="bw1-ki-FVj"/>
+                                <include reference="uhq-ee-Yrs"/>
                                 <include reference="ONV-5U-b1D"/>
                                 <include reference="TAE-94-PE0"/>
                                 <include reference="d2e-ZH-JIb"/>
@@ -1015,14 +1061,14 @@
                                 <include reference="HPY-rZ-Vu9"/>
                                 <include reference="O1B-Re-jov"/>
                                 <include reference="Pqe-2D-S0n"/>
+                                <include reference="6b6-Ki-hGh"/>
+                                <include reference="L9F-cJ-vO3"/>
+                                <include reference="M1d-ng-l3h"/>
                                 <include reference="4SQ-8s-pvV"/>
                                 <include reference="Npf-oF-zZt"/>
                                 <include reference="duQ-V8-0mi"/>
                                 <include reference="ifA-lC-kXt"/>
                                 <include reference="rBP-6A-I3H"/>
-                                <include reference="6b6-Ki-hGh"/>
-                                <include reference="L9F-cJ-vO3"/>
-                                <include reference="M1d-ng-l3h"/>
                                 <include reference="2W3-OV-Xg3"/>
                                 <include reference="ItG-8G-4P9"/>
                                 <include reference="18t-3k-c1x"/>
