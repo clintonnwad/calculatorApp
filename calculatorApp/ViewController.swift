@@ -43,6 +43,9 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     //stores expression as array
     var inputs:[String] = []
     
+    var history:[CalculatorHistory] = []
+
+    
     //operate in order of precedence (BODMAS)
     let operators: [String] = [Strings.divide, Strings.muliply, Strings.plus, Strings.minus]
 
@@ -190,7 +193,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         else if(char == Strings.equal){
             //if array has input try to evaluate them
             if(inputs.count > 0){
-                
+          
                 //if user entered a number and pressed equal then add number to array and evaluate it
                 if(userAddedInput){
                     inputs.append(result)
@@ -205,6 +208,10 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
                     updateResults(removeTrailingDecimals(evalExpression(arr: inputs)!))
                     justEvaluated = true
                 }
+                history.insert(CalculatorHistory(expression: inputs.joined(separator: " "), result: resultLabel.text!),at: 0)
+                self.tableView.reloadData()
+
+                
             }
         }
         else if(char == Strings.clear){
@@ -373,11 +380,16 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return history.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        var expressionLabel:UILabel = cell.viewWithTag(1) as! UILabel
+        var resultLabel:UILabel = cell.viewWithTag(2) as! UILabel
+        expressionLabel.text = history[indexPath.row].expression
+        resultLabel.text = history[indexPath.row].result
+
         return cell
     }
     
