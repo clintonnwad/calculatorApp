@@ -59,6 +59,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         }
     }
     
+    //update history array
     func updateHistory(){
         if(resultLabel.text! != Strings.infinity){
             history.insert(CalculatorHistory(expression: inputs.joined(separator: " "), result: resultLabel.text!),at: 0)
@@ -73,7 +74,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         //clear display if user presses any button after just doing an evaluation
         clearCalculator()
         
-        
+
         if(resultLabel.text == nil){
             resultLabel.text = "0"
         }
@@ -85,11 +86,13 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         let value = Float(result)
         
         var degreesConvertion = Float.pi/180
+        //enable radian calcualtion with sin cos tan
         if(isUsingRadians){
             degreesConvertion = 1
         }
 
         
+        //toggle between radians and degrees and update calculator button
         if(char == Strings.radians || char == Strings.degrees){
             isUsingRadians = !isUsingRadians
             if(sender.titleLabel?.text == Strings.radians){
@@ -115,6 +118,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
                 }
             }
         }
+        //handle square root
         else if(char == Strings.squareroot){
             if(value != nil) {
                 let squareRoot = value!.squareRoot()
@@ -122,6 +126,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
                 updateResults("\(squareRoot)")
             }
         }
+        //handle sqaure
         else if(char == Strings.square){
             if(value != nil) {
                 let sqaure = value!*value!
@@ -129,6 +134,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
                 updateResults("\(sqaure)")
             }
         }
+        //handle sin
         else if(char == Strings.sin){
             if(value != nil) {
                 let sinValue = sin(value!*degreesConvertion)
@@ -136,6 +142,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
                 updateResults("\(sinValue)")
             }
         }
+        //handle cos
         else if(char == Strings.cos){
             if(value != nil) {
                 let cosValue = cos(value!*degreesConvertion)
@@ -143,6 +150,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
                 updateResults("\(cosValue)")
             }
         }
+        //handle tan
         else if(char == Strings.tan){
             if(value != nil) {
                 let tanValue = tan(value!*degreesConvertion)
@@ -150,6 +158,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
                 updateResults("\(tanValue)")
             }
         }
+        //show pi in display area
         else if(char == Strings.pi){
             userAddedInput = true
             updateResults("\( Float.pi)")
@@ -387,6 +396,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
       }
     }
     
+    // row height
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 73
     }
@@ -396,7 +406,9 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
         clearCalculator()
+        //display value result based on cell clicked
         if(!history[indexPath.row].result.contains("e")){
             updateResults(history[indexPath.row].result)
             userAddedInput = true
@@ -407,10 +419,14 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        //get cell object
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.selectionStyle = .none
+        //get labels by tag
         let expressionLabel:UILabel = cell.viewWithTag(1) as! UILabel
         let resultLabel:UILabel = cell.viewWithTag(2) as! UILabel
+        //diplay history data in labels
         expressionLabel.text = history[indexPath.row].expression
         resultLabel.text = history[indexPath.row].result
 
