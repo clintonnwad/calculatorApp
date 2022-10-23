@@ -21,12 +21,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource  {
     
 
     @IBOutlet weak var expressLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var resultLabel: UILabel!
-    
+    @IBOutlet weak var radianIndicatorLabel: UILabel!
+
     //flag to keep track of state of number
     var isNumberPostive = true
     
@@ -36,47 +38,125 @@ class ViewController: UIViewController {
     //flag which is set when a evaluation happens
     var justEvaluated = false
     
+    var isUsingRadians = false
+    
     //stores expression as array
     var inputs:[String] = []
+    
+    var history:[CalculatorHistory] = []
+
     
     //operate in order of precedence (BODMAS)
     let operators: [String] = [Strings.divide, Strings.muliply, Strings.plus, Strings.minus]
 
-    
-    @IBAction func onPress(_ sender: UIButton) {
-        
-        
-        
-        //clear display if user presses any button after just doing an evaluation
+    func clearCalculator(){
         if(justEvaluated){
             updateResults("")
             inputs.removeAll()
             displayExpression()
             justEvaluated = false
         }
+    }
+    
+    func updateHistory(){
+        if(resultLabel.text! != Strings.infinity){
+            history.insert(CalculatorHistory(expression: inputs.joined(separator: " "), result: resultLabel.text!),at: 0)
+            self.tableView.reloadData()
+        }
+    }
+    
+    @IBAction func onPress(_ sender: UIButton) {
         
         
+        
+        //clear display if user presses any button after just doing an evaluation
+        clearCalculator()
+        
+        
+        if(resultLabel.text == nil){
+            resultLabel.text = "0"
+        }
         
         let char = sender.titleLabel!.text
         var newResults = "\(resultLabel!.text!)\(sender.titleLabel!.text!)"
         let result =  Number.clean(resultLabel!.text!)!
         
+        let value = Float(result)
+        
+        var degreesConvertion = Float.pi/180
+        if(isUsingRadians){
+            degreesConvertion = 1
+        }
 
         
-            
+        if(char == Strings.radians || char == Strings.degrees){
+            isUsingRadians = !isUsingRadians
+            if(sender.titleLabel?.text == Strings.radians){
+                sender.setTitle(Strings.degrees, for: .normal)
+                radianIndicatorLabel.isHidden = false
+            }
+            else{
+                sender.setTitle(Strings.radians, for: .normal)
+                radianIndicatorLabel.isHidden = true
+
+            }
+        }
         //handle backspace
-        if(char == Strings.backspace){
+        else if(char == Strings.backspace){
             updateResults(String(result.prefix(result.count-1)))
         }
         //handle when percent is press
         else if(char == Strings.percentage){
-            let value = Float(result)
             if(value != nil) {
                 let percentageValue = value!/100
                 if(percentageValue != 0){
                     updateResults("\(value!/100)")
                 }
             }
+        }
+        else if(char == Strings.squareroot){
+            if(value != nil) {
+                let squareRoot = value!.squareRoot()
+                userAddedInput = true
+                updateResults("\(squareRoot)")
+            }
+        }
+        else if(char == Strings.square){
+            if(value != nil) {
+                let sqaure = value!*value!
+                userAddedInput = true
+                updateResults("\(sqaure)")
+            }
+        }
+        else if(char == Strings.sin){
+            if(value != nil) {
+                let sinValue = sin(value!*degreesConvertion)
+                userAddedInput = true
+                updateResults("\(sinValue)")
+            }
+        }
+        else if(char == Strings.cos){
+            if(value != nil) {
+                let cosValue = cos(value!*degreesConvertion)
+                userAddedInput = true
+                updateResults("\(cosValue)")
+            }
+        }
+        else if(char == Strings.tan){
+            if(value != nil) {
+                let tanValue = tan(value!*degreesConvertion)
+                userAddedInput = true
+                updateResults("\(tanValue)")
+            }
+        }
+        else if(char == Strings.pi){
+            userAddedInput = true
+            updateResults("\( Float.pi)")
+        }
+        else if(char == Strings.random){
+            let randomNumebr = Float.random(in: 0...1)
+            userAddedInput = true
+            updateResults("\(randomNumebr)")
         }
         //handle operators
         else if(char == Strings.plus
@@ -123,7 +203,7 @@ class ViewController: UIViewController {
         else if(char == Strings.equal){
             //if array has input try to evaluate them
             if(inputs.count > 0){
-                
+          
                 //if user entered a number and pressed equal then add number to array and evaluate it
                 if(userAddedInput){
                     inputs.append(result)
@@ -138,6 +218,11 @@ class ViewController: UIViewController {
                     updateResults(removeTrailingDecimals(evalExpression(arr: inputs)!))
                     justEvaluated = true
                 }
+                
+                updateHistory()
+              
+
+                
             }
         }
         else if(char == Strings.clear){
@@ -183,6 +268,11 @@ class ViewController: UIViewController {
     
     //update Result label with option to format or not format number
     private func updateResults(_ number:String,shouldFormat:Bool = true) {
+        
+        if(number.contains(Strings.inf) || number == "inf"){
+            updateResults(Strings.infinity)
+            return
+        }
         if(number == "" || number == "\(Strings.minus) "){
             resultLabel.text = "0"
             //reset sign
@@ -295,8 +385,36 @@ class ViewController: UIViewController {
         }
       }
     }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 73
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return history.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        clearCalculator()
+        if(!history[indexPath.row].result.contains("e")){
+            updateResults(history[indexPath.row].result)
+            userAddedInput = true
+        }
+
+    }
+    
 
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.selectionStyle = .none
+        let expressionLabel:UILabel = cell.viewWithTag(1) as! UILabel
+        let resultLabel:UILabel = cell.viewWithTag(2) as! UILabel
+        expressionLabel.text = history[indexPath.row].expression
+        resultLabel.text = history[indexPath.row].result
+
+        return cell
+    }
     
     //force status bar color change
     override var preferredStatusBarStyle: UIStatusBarStyle {

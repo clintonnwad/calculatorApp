@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="ReemKufi-Regular.ttf">
             <string>ReemKufi-Regular</string>
+        </array>
+        <array key="ReemKufi-SemiBold.ttf">
+            <string>ReemKufi-SemiBold</string>
         </array>
     </customFonts>
     <scenes>
@@ -18,7 +22,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculatorApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIS-gP-uw0">
@@ -29,7 +33,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sxk-S6-D5k" customClass="CustomUIView" customModule="calculatorApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="370.66666666666674" width="390" height="473.33333333333326"/>
+                                <rect key="frame" x="388" y="147" width="456" height="293"/>
                                 <color key="backgroundColor" red="0.15062716600000001" green="0.16106361150000001" blue="0.1922501922" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -128,13 +132,13 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="bhC-YO-gIS" userLabel="NumberPads">
-                                <rect key="frame" x="20" y="474" width="260" height="326"/>
+                                <rect key="frame" x="626.66666666666663" y="167" width="157.33333333333337" height="189"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bVd-no-gFU">
-                                        <rect key="frame" x="0.0" y="0.0" width="260" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="157.33333333333334" height="45.666666666666664"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZ0-d8-1nd">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="46" height="45.666666666666664"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="sZ0-d8-1nd" secondAttribute="height" multiplier="1:1" id="rDb-5r-SQF"/>
                                                 </constraints>
@@ -148,7 +152,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMD-1y-J7J">
-                                                <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="56" y="0.0" width="45.666666666666657" height="45.666666666666664"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="fMD-1y-J7J" secondAttribute="height" multiplier="1:1" id="TRr-5n-45t"/>
                                                 </constraints>
@@ -162,7 +166,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kZ-IE-YuT">
-                                                <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="111.66666666666676" y="0.0" width="45.666666666666671" height="45.666666666666664"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="1kZ-IE-YuT" secondAttribute="height" multiplier="1:1" id="0eS-eV-8g4"/>
                                                 </constraints>
@@ -183,10 +187,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fU1-5a-lsS">
-                                        <rect key="frame" x="0.0" y="82" width="260" height="80"/>
+                                        <rect key="frame" x="0.0" y="47.666666666666657" width="157.33333333333334" height="46"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xA-3b-XvW">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="46" height="46"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="9xA-3b-XvW" secondAttribute="height" multiplier="1:1" id="TYH-Gu-t32"/>
                                                 </constraints>
@@ -200,7 +204,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcO-nD-GTU">
-                                                <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="56" y="0.0" width="45.666666666666657" height="46"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="xcO-nD-GTU" secondAttribute="height" multiplier="1:1" id="X7a-nS-IfX"/>
                                                 </constraints>
@@ -214,7 +218,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oM6-7q-eP5">
-                                                <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="111.66666666666676" y="0.0" width="45.666666666666671" height="46"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="oM6-7q-eP5" secondAttribute="height" multiplier="1:1" id="8zJ-T5-ZlI"/>
                                                 </constraints>
@@ -235,10 +239,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ptf-kq-EQP">
-                                        <rect key="frame" x="0.0" y="164" width="260" height="80"/>
+                                        <rect key="frame" x="0.0" y="95.666666666666686" width="157.33333333333334" height="45.666666666666657"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcl-PH-8oS">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="46" height="45.666666666666664"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="gcl-PH-8oS" secondAttribute="height" multiplier="1:1" id="a0u-Nc-cDZ"/>
                                                 </constraints>
@@ -252,7 +256,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAw-V3-xwx">
-                                                <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="56" y="0.0" width="45.666666666666657" height="45.666666666666664"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="zAw-V3-xwx" secondAttribute="height" multiplier="1:1" id="MOG-3f-Tkm"/>
                                                 </constraints>
@@ -266,7 +270,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFC-dq-6rR">
-                                                <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="111.66666666666676" y="0.0" width="45.666666666666671" height="45.666666666666664"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="lFC-dq-6rR" secondAttribute="height" multiplier="1:1" id="QLF-De-4U7"/>
                                                 </constraints>
@@ -287,10 +291,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="A2C-bA-tbJ">
-                                        <rect key="frame" x="0.0" y="246" width="260" height="80"/>
+                                        <rect key="frame" x="0.0" y="143.33333333333331" width="157.33333333333334" height="45.666666666666657"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAt-F3-mlN">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="46" height="45.666666666666664"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="FAt-F3-mlN" secondAttribute="height" multiplier="1:1" id="HDj-fW-YiM"/>
                                                 </constraints>
@@ -304,7 +308,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgE-U0-HfG">
-                                                <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="56" y="0.0" width="45.666666666666657" height="45.666666666666664"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="rgE-U0-HfG" secondAttribute="height" multiplier="1:1" id="VID-4a-QS2"/>
                                                 </constraints>
@@ -318,7 +322,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uQ-GV-CPB">
-                                                <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="111.66666666666676" y="0.0" width="45.666666666666671" height="45.666666666666664"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8uQ-GV-CPB" secondAttribute="height" multiplier="1:1" id="ZRx-Y8-5bB"/>
                                                 </constraints>
@@ -341,17 +345,17 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9M-Gp-oZL">
-                                <rect key="frame" x="290" y="477" width="68" height="320"/>
+                                <rect key="frame" x="789" y="133" width="55" height="257"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eua-4f-9QM" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="3" width="68" height="68"/>
+                                        <rect key="frame" x="0.0" y="29.333333333333343" width="55" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="eua-4f-9QM" secondAttribute="height" multiplier="1:1" id="tcJ-lJ-jif"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="x">
                                             <fontDescription key="titleFontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
-                                            <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseBackgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
@@ -361,14 +365,14 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yor-7D-FbG" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="85" width="68" height="68"/>
+                                        <rect key="frame" x="0.0" y="77" width="55" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="yor-7D-FbG" secondAttribute="height" multiplier="1:1" id="wJW-PR-duq"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="-">
                                             <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="43"/>
-                                            <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseBackgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
@@ -378,14 +382,14 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOA-UF-kxI" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="167" width="68" height="68"/>
+                                        <rect key="frame" x="0.0" y="125" width="55" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="fOA-UF-kxI" secondAttribute="height" multiplier="1:1" id="4rX-Ge-lmY"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="+">
                                             <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="42"/>
-                                            <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseBackgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
@@ -395,7 +399,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRV-QI-LtR" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="249" width="68" height="68"/>
+                                        <rect key="frame" x="0.0" y="172.66666666666669" width="55" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="mRV-QI-LtR" secondAttribute="height" multiplier="1:1" id="A1c-a0-L7i"/>
                                         </constraints>
@@ -424,75 +428,800 @@
                                     <constraint firstItem="mRV-QI-LtR" firstAttribute="leading" secondItem="h9M-Gp-oZL" secondAttribute="leading" id="zQW-Wb-SjD"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDa-pQ-iTn">
+                                <rect key="frame" x="563" y="167" width="55" height="189"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCo-ZK-H1S" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="138.66666666666669" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bCo-ZK-H1S" secondAttribute="height" multiplier="1:1" id="IuR-Pj-0a8"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="÷">
+                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="39"/>
+                                            <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="15h-nl-IcW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXf-Ux-9b8" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="91" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="DXf-Ux-9b8" secondAttribute="height" multiplier="1:1" id="mue-8j-pIY"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="%">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                            <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ybs-zj-gCT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynE-Ex-gvF" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-4.6666666666666572" width="55" height="55"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="&lt;-">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vGx-ht-C1X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYN-dK-tJG" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="43" width="55" height="55"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="C">
+                                            <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="24"/>
+                                            <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sWw-v4-IrJ"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backspace-icon" translatesAutoresizingMaskIntoConstraints="NO" id="o1Y-tv-Zmd">
+                                        <rect key="frame" x="16.333333333333371" y="13" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="IZu-4M-yQr"/>
+                                            <constraint firstAttribute="height" constant="20" id="yQ3-lm-Nr3"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="DXf-Ux-9b8" secondAttribute="trailing" id="Lam-Xa-h3T"/>
+                                    <constraint firstItem="o1Y-tv-Zmd" firstAttribute="centerY" secondItem="ynE-Ex-gvF" secondAttribute="centerY" id="Ttb-cZ-nqF"/>
+                                    <constraint firstItem="ynE-Ex-gvF" firstAttribute="leading" secondItem="gDa-pQ-iTn" secondAttribute="leading" id="WtU-oV-mNQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ynE-Ex-gvF" secondAttribute="trailing" id="YuD-3N-KhP"/>
+                                    <constraint firstItem="bCo-ZK-H1S" firstAttribute="leading" secondItem="gDa-pQ-iTn" secondAttribute="leading" id="dhA-Ak-S80"/>
+                                    <constraint firstItem="yYN-dK-tJG" firstAttribute="width" secondItem="yYN-dK-tJG" secondAttribute="height" multiplier="1:1" id="hUU-lE-JPv"/>
+                                    <constraint firstAttribute="trailing" secondItem="yYN-dK-tJG" secondAttribute="trailing" id="iZH-uO-cg1"/>
+                                    <constraint firstAttribute="trailing" secondItem="bCo-ZK-H1S" secondAttribute="trailing" id="o0t-gS-Hmf"/>
+                                    <constraint firstItem="DXf-Ux-9b8" firstAttribute="leading" secondItem="gDa-pQ-iTn" secondAttribute="leading" id="ozL-J0-Mj6"/>
+                                    <constraint firstItem="yYN-dK-tJG" firstAttribute="leading" secondItem="gDa-pQ-iTn" secondAttribute="leading" id="uEm-AP-8el"/>
+                                    <constraint firstItem="ynE-Ex-gvF" firstAttribute="width" secondItem="ynE-Ex-gvF" secondAttribute="height" multiplier="1:1" id="uwD-Au-Q56"/>
+                                    <constraint firstItem="o1Y-tv-Zmd" firstAttribute="centerX" secondItem="ynE-Ex-gvF" secondAttribute="centerX" constant="-1.1666666666666572" id="xeE-yR-w6m"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XH0-DW-QEN">
+                                <rect key="frame" x="488" y="167" width="55" height="189"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKE-kG-IJC" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="138.66666666666669" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="FKE-kG-IJC" secondAttribute="height" multiplier="1:1" id="Ce9-BA-JyI"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="x2">
+                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="12"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="brV-Jw-DDD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4EX-rC-M70" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="91" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="4EX-rC-M70" secondAttribute="height" multiplier="1:1" id="f2A-O4-Cxa"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="pi">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mMc-fd-52U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytw-Lx-6mZ" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-4.6666666666666572" width="55" height="55"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="sqrt">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QhI-E6-6f9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ku-wT-m2z" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="43" width="55" height="55"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Rand">
+                                            <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="11"/>
+                                            <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nE4-6B-5JW"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sqrt" translatesAutoresizingMaskIntoConstraints="NO" id="Wg3-2O-E9o">
+                                        <rect key="frame" x="14" y="13" width="25" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="C2J-ul-kGh"/>
+                                            <constraint firstAttribute="width" constant="25" id="qGW-X2-S6c"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pi" translatesAutoresizingMaskIntoConstraints="NO" id="4Lb-gT-cTe">
+                                        <rect key="frame" x="20.666666666666686" y="108.33333333333331" width="14" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="14" id="ozm-Uy-rVW"/>
+                                            <constraint firstAttribute="height" constant="20" id="rzC-NR-RF1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sq" translatesAutoresizingMaskIntoConstraints="NO" id="o52-bN-3K9">
+                                        <rect key="frame" x="20.666666666666686" y="151" width="18" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="0F0-Lk-owU"/>
+                                            <constraint firstAttribute="width" constant="18" id="ldJ-yb-COc"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="o52-bN-3K9" firstAttribute="centerX" secondItem="FKE-kG-IJC" secondAttribute="centerX" constant="2.1666666666667425" id="0gx-Lm-Z2k"/>
+                                    <constraint firstItem="4EX-rC-M70" firstAttribute="leading" secondItem="XH0-DW-QEN" secondAttribute="leading" id="43i-Xh-6Yn"/>
+                                    <constraint firstAttribute="trailing" secondItem="FKE-kG-IJC" secondAttribute="trailing" id="4Av-Lc-sMF"/>
+                                    <constraint firstAttribute="trailing" secondItem="4EX-rC-M70" secondAttribute="trailing" id="51G-pM-shV"/>
+                                    <constraint firstItem="4Ku-wT-m2z" firstAttribute="width" secondItem="4Ku-wT-m2z" secondAttribute="height" multiplier="1:1" id="OdW-SE-aTP"/>
+                                    <constraint firstItem="Ytw-Lx-6mZ" firstAttribute="leading" secondItem="XH0-DW-QEN" secondAttribute="leading" id="W3G-BA-FPM"/>
+                                    <constraint firstItem="4Lb-gT-cTe" firstAttribute="centerX" secondItem="4EX-rC-M70" secondAttribute="centerX" id="b7h-Hx-hMa"/>
+                                    <constraint firstItem="4Ku-wT-m2z" firstAttribute="leading" secondItem="XH0-DW-QEN" secondAttribute="leading" id="bid-rJ-ulT"/>
+                                    <constraint firstItem="Wg3-2O-E9o" firstAttribute="centerY" secondItem="Ytw-Lx-6mZ" secondAttribute="centerY" id="cPq-fk-Jtx"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Ku-wT-m2z" secondAttribute="trailing" id="evd-nF-9xC"/>
+                                    <constraint firstItem="Ytw-Lx-6mZ" firstAttribute="width" secondItem="Ytw-Lx-6mZ" secondAttribute="height" multiplier="1:1" id="grg-d6-Q5G"/>
+                                    <constraint firstItem="Wg3-2O-E9o" firstAttribute="centerX" secondItem="Ytw-Lx-6mZ" secondAttribute="centerX" constant="-1.1666666666666572" id="kfY-nD-YfC"/>
+                                    <constraint firstItem="4Lb-gT-cTe" firstAttribute="centerY" secondItem="4EX-rC-M70" secondAttribute="centerY" id="le5-8C-VoJ"/>
+                                    <constraint firstItem="o52-bN-3K9" firstAttribute="centerY" secondItem="FKE-kG-IJC" secondAttribute="centerY" constant="-5.1666666666666856" id="sLv-mq-BoH"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ytw-Lx-6mZ" secondAttribute="trailing" id="uEU-gN-FG9"/>
+                                    <constraint firstItem="FKE-kG-IJC" firstAttribute="leading" secondItem="XH0-DW-QEN" secondAttribute="leading" id="xse-hw-ei1"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="4Lb-gT-cTe"/>
+                                        <exclude reference="o52-bN-3K9"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="W3G-BA-FPM"/>
+                                        <exclude reference="grg-d6-Q5G"/>
+                                        <exclude reference="uEU-gN-FG9"/>
+                                        <exclude reference="cPq-fk-Jtx"/>
+                                        <exclude reference="kfY-nD-YfC"/>
+                                        <exclude reference="OdW-SE-aTP"/>
+                                        <exclude reference="bid-rJ-ulT"/>
+                                        <exclude reference="evd-nF-9xC"/>
+                                        <exclude reference="43i-Xh-6Yn"/>
+                                        <exclude reference="51G-pM-shV"/>
+                                        <exclude reference="4Av-Lc-sMF"/>
+                                        <exclude reference="xse-hw-ei1"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="4Lb-gT-cTe"/>
+                                        <include reference="o52-bN-3K9"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="W3G-BA-FPM"/>
+                                        <include reference="grg-d6-Q5G"/>
+                                        <include reference="uEU-gN-FG9"/>
+                                        <include reference="cPq-fk-Jtx"/>
+                                        <include reference="kfY-nD-YfC"/>
+                                        <include reference="OdW-SE-aTP"/>
+                                        <include reference="bid-rJ-ulT"/>
+                                        <include reference="evd-nF-9xC"/>
+                                        <include reference="43i-Xh-6Yn"/>
+                                        <include reference="51G-pM-shV"/>
+                                        <include reference="4Av-Lc-sMF"/>
+                                        <include reference="xse-hw-ei1"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVI-Pk-tTy">
+                                <rect key="frame" x="413" y="167" width="55" height="189"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWT-0g-9Gd" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="138.66666666666669" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="VWT-0g-9Gd" secondAttribute="height" multiplier="1:1" id="BNS-aI-8Bd"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="tan">
+                                            <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="15"/>
+                                            <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="asN-Kv-hg1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pP-GK-dFv" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="91" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="9pP-GK-dFv" secondAttribute="height" multiplier="1:1" id="af7-mr-Drn"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="cos">
+                                            <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="16"/>
+                                            <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ji4-nU-XlX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDc-dY-hQ5" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-4.6666666666666572" width="55" height="55"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="rad">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VAT-3E-Z3M"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqa-gT-8IB" customClass="OperatorUIButton" customModule="calculatorApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="43" width="55" height="55"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="sin">
+                                            <fontDescription key="titleFontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="16"/>
+                                            <color key="baseBackgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jdv-un-pQT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="IDc-dY-hQ5" firstAttribute="leading" secondItem="FVI-Pk-tTy" secondAttribute="leading" id="4Cc-86-0NC"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gqa-gT-8IB" secondAttribute="trailing" id="WiH-E3-FPg"/>
+                                    <constraint firstAttribute="trailing" secondItem="9pP-GK-dFv" secondAttribute="trailing" id="dCv-In-7Zh"/>
+                                    <constraint firstItem="Gqa-gT-8IB" firstAttribute="leading" secondItem="FVI-Pk-tTy" secondAttribute="leading" id="dNv-Gy-j15"/>
+                                    <constraint firstItem="IDc-dY-hQ5" firstAttribute="width" secondItem="IDc-dY-hQ5" secondAttribute="height" multiplier="1:1" id="dcO-po-DEc"/>
+                                    <constraint firstItem="VWT-0g-9Gd" firstAttribute="leading" secondItem="FVI-Pk-tTy" secondAttribute="leading" id="hgq-IY-WEy"/>
+                                    <constraint firstItem="9pP-GK-dFv" firstAttribute="leading" secondItem="FVI-Pk-tTy" secondAttribute="leading" id="hzf-cS-91d"/>
+                                    <constraint firstAttribute="trailing" secondItem="VWT-0g-9Gd" secondAttribute="trailing" id="n3t-Bc-Dur"/>
+                                    <constraint firstAttribute="trailing" secondItem="IDc-dY-hQ5" secondAttribute="trailing" id="tRb-ay-7iM"/>
+                                    <constraint firstItem="Gqa-gT-8IB" firstAttribute="width" secondItem="Gqa-gT-8IB" secondAttribute="height" multiplier="1:1" id="vyk-hW-9FS"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dcO-po-DEc"/>
+                                        <exclude reference="tRb-ay-7iM"/>
+                                        <exclude reference="WiH-E3-FPg"/>
+                                        <exclude reference="dNv-Gy-j15"/>
+                                        <exclude reference="vyk-hW-9FS"/>
+                                        <exclude reference="dCv-In-7Zh"/>
+                                        <exclude reference="hzf-cS-91d"/>
+                                        <exclude reference="hgq-IY-WEy"/>
+                                        <exclude reference="n3t-Bc-Dur"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="dcO-po-DEc"/>
+                                        <include reference="tRb-ay-7iM"/>
+                                        <include reference="WiH-E3-FPg"/>
+                                        <include reference="dNv-Gy-j15"/>
+                                        <include reference="vyk-hW-9FS"/>
+                                        <include reference="dCv-In-7Zh"/>
+                                        <include reference="hzf-cS-91d"/>
+                                        <include reference="hgq-IY-WEy"/>
+                                        <include reference="n3t-Bc-Dur"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" estimatedRowHeight="73" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zdw-MM-cuN">
+                                <rect key="frame" x="0.0" y="147" width="388" height="243"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="73" id="3eo-ax-Qwm">
+                                        <rect key="frame" x="0.0" y="50" width="388" height="73"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3eo-ax-Qwm" id="qmF-6x-SmO">
+                                            <rect key="frame" x="0.0" y="0.0" width="388" height="73"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20+2*3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ci6-9p-A5c">
+                                                    <rect key="frame" x="0.0" y="8.0000000000000018" width="368" height="25.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="17"/>
+                                                    <color key="textColor" red="0.64705884459999996" green="0.64705890420000001" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20+2*3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PcT-qa-12U">
+                                                    <rect key="frame" x="30" y="26" width="338" height="39"/>
+                                                    <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="26"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYC-Es-JLe">
+                                                    <rect key="frame" x="20" y="72" width="348" height="1"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.057823129251700682" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="LtF-P0-rDq"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="vYC-Es-JLe" secondAttribute="trailing" constant="20" id="9HA-hU-J1X"/>
+                                                <constraint firstItem="Ci6-9p-A5c" firstAttribute="leading" secondItem="qmF-6x-SmO" secondAttribute="leading" id="C7R-h1-dUh"/>
+                                                <constraint firstItem="vYC-Es-JLe" firstAttribute="leading" secondItem="qmF-6x-SmO" secondAttribute="leading" constant="20" id="IdJ-oB-cAF"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ci6-9p-A5c" secondAttribute="trailing" constant="20" id="JjK-aU-87r"/>
+                                                <constraint firstItem="PcT-qa-12U" firstAttribute="leading" secondItem="qmF-6x-SmO" secondAttribute="leadingMargin" constant="10" id="M4R-gV-CUy"/>
+                                                <constraint firstAttribute="trailing" secondItem="PcT-qa-12U" secondAttribute="trailing" constant="20" id="NIm-pH-i3q"/>
+                                                <constraint firstItem="PcT-qa-12U" firstAttribute="top" secondItem="Ci6-9p-A5c" secondAttribute="bottom" constant="-7.6666666666666714" id="UlS-dD-a07"/>
+                                                <constraint firstAttribute="bottom" secondItem="vYC-Es-JLe" secondAttribute="bottom" id="dlj-Jx-Jvt"/>
+                                                <constraint firstItem="Ci6-9p-A5c" firstAttribute="top" secondItem="qmF-6x-SmO" secondAttribute="top" constant="8" id="iaF-x7-mHv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="D2D-Eq-S3w"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qM8-EL-YDL"/>
+                                </connections>
+                            </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U3s-4C-rDv">
-                                <rect key="frame" x="20" y="300.66666666666669" width="345" height="70"/>
+                                <rect key="frame" x="388" y="87" width="446" height="60"/>
                                 <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="40"/>
+                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFz-7t-hhm">
-                                <rect key="frame" x="347" y="273.33333333333331" width="18" height="37.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFz-7t-hhm">
+                                <rect key="frame" x="388" y="64" width="446" height="30"/>
                                 <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="32"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="ReemKufi-Regular" family="Reem Kufi" pointSize="20"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jad-cH-2lh">
+                                <rect key="frame" x="20" y="109.33333333333333" width="368" height="37.666666666666671"/>
+                                <fontDescription key="fontDescription" name="ReemKufi-SemiBold" family="Reem Kufi" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lou-pP-K52">
+                                <rect key="frame" x="388" y="116.66666666666667" width="456" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.095839671789999997" green="0.1099883094" blue="0.1294761002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="bCo-ZK-H1S" firstAttribute="centerY" secondItem="FAt-F3-mlN" secondAttribute="centerY" id="0Bx-az-Ciw"/>
+                            <constraint firstItem="4EX-rC-M70" firstAttribute="centerY" secondItem="DXf-Ux-9b8" secondAttribute="centerY" id="0Ka-VG-1bg"/>
                             <constraint firstItem="h9M-Gp-oZL" firstAttribute="centerY" secondItem="bhC-YO-gIS" secondAttribute="centerY" id="18t-3k-c1x"/>
+                            <constraint firstItem="IDc-dY-hQ5" firstAttribute="centerY" secondItem="Ytw-Lx-6mZ" secondAttribute="centerY" id="1t4-fo-f4O"/>
+                            <constraint firstItem="fOA-UF-kxI" firstAttribute="centerY" secondItem="lFC-dq-6rR" secondAttribute="centerY" id="29x-gj-xJt"/>
                             <constraint firstItem="bhC-YO-gIS" firstAttribute="top" secondItem="eRK-A4-mtB" secondAttribute="bottom" constant="5" id="2W3-OV-Xg3"/>
+                            <constraint firstItem="XH0-DW-QEN" firstAttribute="leading" secondItem="FVI-Pk-tTy" secondAttribute="trailing" constant="20" id="2ha-hc-wA8"/>
                             <constraint firstItem="ITC-W0-J1r" firstAttribute="centerX" secondItem="fMD-1y-J7J" secondAttribute="centerX" id="44h-3C-Gsd"/>
                             <constraint firstItem="sxk-S6-D5k" firstAttribute="top" secondItem="U3s-4C-rDv" secondAttribute="bottom" id="4SQ-8s-pvV"/>
+                            <constraint firstItem="fFz-7t-hhm" firstAttribute="leading" secondItem="zdw-MM-cuN" secondAttribute="trailing" id="5JJ-Ux-LS5"/>
+                            <constraint firstItem="U3s-4C-rDv" firstAttribute="top" secondItem="fFz-7t-hhm" secondAttribute="bottom" constant="-7" id="5YE-9A-Ca2"/>
                             <constraint firstItem="mRV-QI-LtR" firstAttribute="centerY" secondItem="8uQ-GV-CPB" secondAttribute="centerY" id="6Vh-aR-8Uf"/>
                             <constraint firstItem="MIS-gP-uw0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6b6-Ki-hGh"/>
+                            <constraint firstItem="DXf-Ux-9b8" firstAttribute="centerY" secondItem="gcl-PH-8oS" secondAttribute="centerY" id="6or-tH-jhX"/>
                             <constraint firstItem="03K-si-d9B" firstAttribute="centerX" secondItem="eua-4f-9QM" secondAttribute="centerX" id="7T9-vx-mIt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fFz-7t-hhm" secondAttribute="trailing" constant="25" id="7Va-1L-paG"/>
                             <constraint firstItem="U3s-4C-rDv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="88e-WU-R2z"/>
+                            <constraint firstItem="mRV-QI-LtR" firstAttribute="centerY" secondItem="8uQ-GV-CPB" secondAttribute="centerY" id="8j6-xQ-0Se"/>
+                            <constraint firstItem="XH0-DW-QEN" firstAttribute="height" secondItem="gDa-pQ-iTn" secondAttribute="height" id="99q-fp-eVm"/>
+                            <constraint firstItem="XH0-DW-QEN" firstAttribute="width" secondItem="gDa-pQ-iTn" secondAttribute="width" id="9Xg-wn-f4f"/>
+                            <constraint firstItem="FKE-kG-IJC" firstAttribute="centerY" secondItem="bCo-ZK-H1S" secondAttribute="centerY" id="Aef-F1-jwP"/>
+                            <constraint firstItem="XH0-DW-QEN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="AuN-hX-8Jg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eRK-A4-mtB" secondAttribute="trailing" constant="32" id="CR8-4l-VLw"/>
                             <constraint firstItem="fOA-UF-kxI" firstAttribute="centerY" secondItem="lFC-dq-6rR" secondAttribute="centerY" id="D0f-9o-D5w"/>
+                            <constraint firstItem="sxk-S6-D5k" firstAttribute="top" secondItem="fMD-1y-J7J" secondAttribute="top" constant="-20" id="DaB-pG-HLl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U3s-4C-rDv" secondAttribute="trailing" constant="25" id="EoL-dn-zxe"/>
                             <constraint firstItem="eRK-A4-mtB" firstAttribute="height" secondItem="eua-4f-9QM" secondAttribute="height" multiplier="1.0049" id="Fn0-xr-Tc8"/>
+                            <constraint firstAttribute="bottom" secondItem="sxk-S6-D5k" secondAttribute="bottom" constant="-50" id="HMs-gV-Lc5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h9M-Gp-oZL" secondAttribute="trailing" constant="32" id="HPY-rZ-Vu9"/>
                             <constraint firstItem="eRK-A4-mtB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hjb-od-cFc"/>
+                            <constraint firstItem="eua-4f-9QM" firstAttribute="centerY" secondItem="1kZ-IE-YuT" secondAttribute="centerY" id="IM2-7F-Ipr"/>
                             <constraint firstItem="bhC-YO-gIS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ItG-8G-4P9"/>
+                            <constraint firstItem="gDa-pQ-iTn" firstAttribute="width" secondItem="h9M-Gp-oZL" secondAttribute="width" id="JIF-i8-SPL"/>
+                            <constraint firstItem="VWT-0g-9Gd" firstAttribute="centerY" secondItem="FKE-kG-IJC" secondAttribute="centerY" id="JY6-sc-onW"/>
                             <constraint firstItem="MIS-gP-uw0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L9F-cJ-vO3"/>
                             <constraint firstItem="fFz-7t-hhm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LKp-K1-aFE"/>
+                            <constraint firstItem="bhC-YO-gIS" firstAttribute="leading" secondItem="gDa-pQ-iTn" secondAttribute="trailing" constant="8.6699999999999999" id="LPf-CN-YzV"/>
                             <constraint firstAttribute="bottom" secondItem="MIS-gP-uw0" secondAttribute="bottom" id="M1d-ng-l3h"/>
                             <constraint firstItem="sxk-S6-D5k" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Npf-oF-zZt"/>
                             <constraint firstItem="eua-4f-9QM" firstAttribute="centerY" secondItem="1kZ-IE-YuT" secondAttribute="centerY" id="O12-a3-jLl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bhC-YO-gIS" secondAttribute="trailing" constant="110" id="O1B-Re-jov"/>
+                            <constraint firstItem="FVI-Pk-tTy" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ONV-5U-b1D"/>
+                            <constraint firstItem="bhC-YO-gIS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="ONr-ok-wMa"/>
+                            <constraint firstItem="Lou-pP-K52" firstAttribute="leading" secondItem="jad-cH-2lh" secondAttribute="trailing" id="Oax-OF-OhV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fFz-7t-hhm" secondAttribute="trailing" constant="10" id="OiU-CD-xGH"/>
+                            <constraint firstItem="Gqa-gT-8IB" firstAttribute="centerY" secondItem="4Ku-wT-m2z" secondAttribute="centerY" id="PhP-LM-cbr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bhC-YO-gIS" secondAttribute="bottom" constant="10" id="Pqe-2D-S0n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h9M-Gp-oZL" secondAttribute="trailing" id="PsK-CF-uKA"/>
+                            <constraint firstItem="Ytw-Lx-6mZ" firstAttribute="centerY" secondItem="ynE-Ex-gvF" secondAttribute="centerY" id="QMS-59-0ob"/>
+                            <constraint firstItem="zdw-MM-cuN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="R3b-UJ-aBO"/>
+                            <constraint firstItem="zdw-MM-cuN" firstAttribute="height" secondItem="sxk-S6-D5k" secondAttribute="height" multiplier="0.829352" id="RpR-Ob-bML"/>
+                            <constraint firstItem="yor-7D-FbG" firstAttribute="centerY" secondItem="oM6-7q-eP5" secondAttribute="centerY" id="RzG-Lg-Ymh"/>
                             <constraint firstItem="U3s-4C-rDv" firstAttribute="top" secondItem="fFz-7t-hhm" secondAttribute="bottom" constant="-10" id="S57-oM-Caj"/>
+                            <constraint firstItem="FVI-Pk-tTy" firstAttribute="centerY" secondItem="XH0-DW-QEN" secondAttribute="centerY" id="TAE-94-PE0"/>
                             <constraint firstItem="h9M-Gp-oZL" firstAttribute="leading" secondItem="bhC-YO-gIS" secondAttribute="trailing" constant="10" id="TpK-oq-RT4"/>
+                            <constraint firstAttribute="bottom" secondItem="zdw-MM-cuN" secondAttribute="bottom" id="UMe-Kv-iga"/>
                             <constraint firstItem="XaU-A3-J2F" firstAttribute="centerX" secondItem="1kZ-IE-YuT" secondAttribute="centerX" id="WwH-9q-z4f"/>
                             <constraint firstItem="yor-7D-FbG" firstAttribute="centerY" secondItem="oM6-7q-eP5" secondAttribute="centerY" id="Yv5-xX-PFN"/>
+                            <constraint firstItem="U3s-4C-rDv" firstAttribute="leading" secondItem="jad-cH-2lh" secondAttribute="trailing" id="au7-0S-HB8"/>
+                            <constraint firstItem="gDa-pQ-iTn" firstAttribute="leading" secondItem="XH0-DW-QEN" secondAttribute="trailing" constant="20" id="bFk-En-3eF"/>
                             <constraint firstItem="m31-kG-HXG" firstAttribute="centerX" secondItem="sZ0-d8-1nd" secondAttribute="centerX" id="bhZ-RR-KVV"/>
+                            <constraint firstItem="ynE-Ex-gvF" firstAttribute="centerY" secondItem="sZ0-d8-1nd" secondAttribute="centerY" id="bkf-Xs-0BL"/>
+                            <constraint firstAttribute="trailing" secondItem="sxk-S6-D5k" secondAttribute="trailing" id="bw1-ki-FVj"/>
+                            <constraint firstItem="FVI-Pk-tTy" firstAttribute="height" secondItem="XH0-DW-QEN" secondAttribute="height" id="d2e-ZH-JIb"/>
                             <constraint firstAttribute="bottom" secondItem="sxk-S6-D5k" secondAttribute="bottom" id="duQ-V8-0mi"/>
+                            <constraint firstAttribute="bottom" secondItem="h9M-Gp-oZL" secondAttribute="bottom" id="flQ-Ro-OMB"/>
+                            <constraint firstItem="yYN-dK-tJG" firstAttribute="centerY" secondItem="9xA-3b-XvW" secondAttribute="centerY" id="fph-Eh-UB3"/>
+                            <constraint firstItem="U3s-4C-rDv" firstAttribute="leading" secondItem="zdw-MM-cuN" secondAttribute="trailing" id="g2t-h2-Hgp"/>
                             <constraint firstItem="h9M-Gp-oZL" firstAttribute="height" secondItem="bhC-YO-gIS" secondAttribute="height" multiplier="0.981595" id="gBv-Ab-dPg"/>
+                            <constraint firstItem="fFz-7t-hhm" firstAttribute="top" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="500" id="gZc-da-PJL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lou-pP-K52" secondAttribute="trailing" id="gsk-pH-Jg5"/>
+                            <constraint firstItem="sxk-S6-D5k" firstAttribute="top" secondItem="Lou-pP-K52" secondAttribute="bottom" constant="10" id="hro-YZ-R0Z"/>
                             <constraint firstItem="sxk-S6-D5k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ifA-lC-kXt"/>
+                            <constraint firstItem="h9M-Gp-oZL" firstAttribute="leading" secondItem="bhC-YO-gIS" secondAttribute="trailing" constant="5" id="kSY-hC-qvE"/>
+                            <constraint firstItem="gDa-pQ-iTn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ku1-9x-l67"/>
+                            <constraint firstItem="FVI-Pk-tTy" firstAttribute="leading" secondItem="sxk-S6-D5k" secondAttribute="leading" constant="25" id="lKp-Ar-vcS"/>
+                            <constraint firstItem="FVI-Pk-tTy" firstAttribute="width" secondItem="XH0-DW-QEN" secondAttribute="width" id="pGR-Xh-a9R"/>
+                            <constraint firstItem="jad-cH-2lh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="poc-zw-P29"/>
+                            <constraint firstItem="gDa-pQ-iTn" firstAttribute="centerY" secondItem="h9M-Gp-oZL" secondAttribute="centerY" id="qkA-fL-1mm"/>
+                            <constraint firstItem="h9M-Gp-oZL" firstAttribute="centerY" secondItem="bhC-YO-gIS" secondAttribute="centerY" id="qrB-Ta-Bqh"/>
                             <constraint firstItem="sxk-S6-D5k" firstAttribute="top" secondItem="eRK-A4-mtB" secondAttribute="top" constant="-30" id="rBP-6A-I3H"/>
+                            <constraint firstItem="zdw-MM-cuN" firstAttribute="top" secondItem="jad-cH-2lh" secondAttribute="bottom" id="sb1-1d-7SM"/>
+                            <constraint firstItem="4Ku-wT-m2z" firstAttribute="centerY" secondItem="yYN-dK-tJG" secondAttribute="centerY" id="uGs-Bf-wV9"/>
+                            <constraint firstItem="sxk-S6-D5k" firstAttribute="leading" secondItem="zdw-MM-cuN" secondAttribute="trailing" id="uhq-ee-Yrs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U3s-4C-rDv" secondAttribute="trailing" constant="10" id="vFt-qy-E8g"/>
+                            <constraint firstItem="sxk-S6-D5k" firstAttribute="top" secondItem="U3s-4C-rDv" secondAttribute="bottom" id="vvG-rL-sYW"/>
+                            <constraint firstItem="bhC-YO-gIS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="y06-TT-0kD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bhC-YO-gIS" secondAttribute="trailing" constant="60" id="yM5-vW-Vnn"/>
+                            <constraint firstItem="9pP-GK-dFv" firstAttribute="centerY" secondItem="4EX-rC-M70" secondAttribute="centerY" id="zlE-Ao-Fb7"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="MIS-gP-uw0"/>
+                                <exclude reference="sxk-S6-D5k"/>
+                                <exclude reference="eRK-A4-mtB"/>
+                                <exclude reference="bhC-YO-gIS"/>
+                                <exclude reference="h9M-Gp-oZL"/>
+                                <exclude reference="gDa-pQ-iTn"/>
+                                <exclude reference="XH0-DW-QEN"/>
+                                <exclude reference="FVI-Pk-tTy"/>
+                                <exclude reference="zdw-MM-cuN"/>
+                                <exclude reference="U3s-4C-rDv"/>
+                                <exclude reference="fFz-7t-hhm"/>
+                                <exclude reference="jad-cH-2lh"/>
+                                <exclude reference="Lou-pP-K52"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7Va-1L-paG"/>
+                                <exclude reference="CR8-4l-VLw"/>
+                                <exclude reference="EoL-dn-zxe"/>
+                                <exclude reference="HPY-rZ-Vu9"/>
+                                <exclude reference="O1B-Re-jov"/>
+                                <exclude reference="OiU-CD-xGH"/>
+                                <exclude reference="Pqe-2D-S0n"/>
+                                <exclude reference="PsK-CF-uKA"/>
+                                <exclude reference="vFt-qy-E8g"/>
+                                <exclude reference="yM5-vW-Vnn"/>
+                                <exclude reference="R3b-UJ-aBO"/>
+                                <exclude reference="RpR-Ob-bML"/>
+                                <exclude reference="UMe-Kv-iga"/>
+                                <exclude reference="5JJ-Ux-LS5"/>
+                                <exclude reference="LKp-K1-aFE"/>
+                                <exclude reference="gZc-da-PJL"/>
+                                <exclude reference="5YE-9A-Ca2"/>
+                                <exclude reference="88e-WU-R2z"/>
+                                <exclude reference="S57-oM-Caj"/>
+                                <exclude reference="g2t-h2-Hgp"/>
+                                <exclude reference="JY6-sc-onW"/>
+                                <exclude reference="Fn0-xr-Tc8"/>
+                                <exclude reference="Hjb-od-cFc"/>
+                                <exclude reference="bhZ-RR-KVV"/>
+                                <exclude reference="44h-3C-Gsd"/>
+                                <exclude reference="WwH-9q-z4f"/>
+                                <exclude reference="ONV-5U-b1D"/>
+                                <exclude reference="TAE-94-PE0"/>
+                                <exclude reference="d2e-ZH-JIb"/>
+                                <exclude reference="lKp-Ar-vcS"/>
+                                <exclude reference="pGR-Xh-a9R"/>
+                                <exclude reference="1t4-fo-f4O"/>
+                                <exclude reference="PhP-LM-cbr"/>
+                                <exclude reference="zlE-Ao-Fb7"/>
+                                <exclude reference="7T9-vx-mIt"/>
+                                <exclude reference="4SQ-8s-pvV"/>
+                                <exclude reference="DaB-pG-HLl"/>
+                                <exclude reference="HMs-gV-Lc5"/>
+                                <exclude reference="Npf-oF-zZt"/>
+                                <exclude reference="bw1-ki-FVj"/>
+                                <exclude reference="duQ-V8-0mi"/>
+                                <exclude reference="ifA-lC-kXt"/>
+                                <exclude reference="rBP-6A-I3H"/>
+                                <exclude reference="uhq-ee-Yrs"/>
+                                <exclude reference="vvG-rL-sYW"/>
+                                <exclude reference="2ha-hc-wA8"/>
+                                <exclude reference="99q-fp-eVm"/>
+                                <exclude reference="9Xg-wn-f4f"/>
+                                <exclude reference="AuN-hX-8Jg"/>
+                                <exclude reference="QMS-59-0ob"/>
+                                <exclude reference="uGs-Bf-wV9"/>
+                                <exclude reference="0Ka-VG-1bg"/>
+                                <exclude reference="Aef-F1-jwP"/>
+                                <exclude reference="JIF-i8-SPL"/>
+                                <exclude reference="bFk-En-3eF"/>
+                                <exclude reference="ku1-9x-l67"/>
+                                <exclude reference="qkA-fL-1mm"/>
+                                <exclude reference="bkf-Xs-0BL"/>
+                                <exclude reference="fph-Eh-UB3"/>
+                                <exclude reference="6or-tH-jhX"/>
+                                <exclude reference="0Bx-az-Ciw"/>
+                                <exclude reference="2W3-OV-Xg3"/>
+                                <exclude reference="ItG-8G-4P9"/>
+                                <exclude reference="LPf-CN-YzV"/>
+                                <exclude reference="ONr-ok-wMa"/>
+                                <exclude reference="y06-TT-0kD"/>
+                                <exclude reference="6b6-Ki-hGh"/>
+                                <exclude reference="L9F-cJ-vO3"/>
+                                <exclude reference="M1d-ng-l3h"/>
+                                <exclude reference="18t-3k-c1x"/>
+                                <exclude reference="TpK-oq-RT4"/>
+                                <exclude reference="flQ-Ro-OMB"/>
+                                <exclude reference="gBv-Ab-dPg"/>
+                                <exclude reference="kSY-hC-qvE"/>
+                                <exclude reference="qrB-Ta-Bqh"/>
+                                <exclude reference="IM2-7F-Ipr"/>
+                                <exclude reference="O12-a3-jLl"/>
+                                <exclude reference="RzG-Lg-Ymh"/>
+                                <exclude reference="Yv5-xX-PFN"/>
+                                <exclude reference="29x-gj-xJt"/>
+                                <exclude reference="D0f-9o-D5w"/>
+                                <exclude reference="6Vh-aR-8Uf"/>
+                                <exclude reference="8j6-xQ-0Se"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="MIS-gP-uw0"/>
+                                <include reference="sxk-S6-D5k"/>
+                                <exclude reference="eRK-A4-mtB"/>
+                                <include reference="bhC-YO-gIS"/>
+                                <include reference="h9M-Gp-oZL"/>
+                                <include reference="gDa-pQ-iTn"/>
+                                <include reference="XH0-DW-QEN"/>
+                                <include reference="FVI-Pk-tTy"/>
+                                <include reference="zdw-MM-cuN"/>
+                                <include reference="U3s-4C-rDv"/>
+                                <include reference="fFz-7t-hhm"/>
+                                <include reference="jad-cH-2lh"/>
+                                <include reference="Lou-pP-K52"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="OiU-CD-xGH"/>
+                                <include reference="PsK-CF-uKA"/>
+                                <include reference="vFt-qy-E8g"/>
+                                <include reference="yM5-vW-Vnn"/>
+                                <include reference="R3b-UJ-aBO"/>
+                                <include reference="RpR-Ob-bML"/>
+                                <include reference="UMe-Kv-iga"/>
+                                <include reference="5JJ-Ux-LS5"/>
+                                <include reference="gZc-da-PJL"/>
+                                <include reference="5YE-9A-Ca2"/>
+                                <include reference="g2t-h2-Hgp"/>
+                                <include reference="JY6-sc-onW"/>
+                                <include reference="ONV-5U-b1D"/>
+                                <include reference="TAE-94-PE0"/>
+                                <include reference="d2e-ZH-JIb"/>
+                                <include reference="lKp-Ar-vcS"/>
+                                <include reference="pGR-Xh-a9R"/>
+                                <include reference="1t4-fo-f4O"/>
+                                <include reference="PhP-LM-cbr"/>
+                                <include reference="zlE-Ao-Fb7"/>
+                                <include reference="DaB-pG-HLl"/>
+                                <include reference="HMs-gV-Lc5"/>
+                                <include reference="bw1-ki-FVj"/>
+                                <include reference="uhq-ee-Yrs"/>
+                                <include reference="vvG-rL-sYW"/>
+                                <include reference="2ha-hc-wA8"/>
+                                <include reference="99q-fp-eVm"/>
+                                <include reference="9Xg-wn-f4f"/>
+                                <include reference="AuN-hX-8Jg"/>
+                                <include reference="QMS-59-0ob"/>
+                                <include reference="uGs-Bf-wV9"/>
+                                <include reference="0Ka-VG-1bg"/>
+                                <include reference="Aef-F1-jwP"/>
+                                <include reference="JIF-i8-SPL"/>
+                                <include reference="bFk-En-3eF"/>
+                                <include reference="ku1-9x-l67"/>
+                                <include reference="qkA-fL-1mm"/>
+                                <include reference="bkf-Xs-0BL"/>
+                                <include reference="fph-Eh-UB3"/>
+                                <include reference="6or-tH-jhX"/>
+                                <include reference="0Bx-az-Ciw"/>
+                                <include reference="LPf-CN-YzV"/>
+                                <include reference="ONr-ok-wMa"/>
+                                <include reference="y06-TT-0kD"/>
+                                <include reference="flQ-Ro-OMB"/>
+                                <include reference="kSY-hC-qvE"/>
+                                <include reference="qrB-Ta-Bqh"/>
+                                <include reference="IM2-7F-Ipr"/>
+                                <include reference="RzG-Lg-Ymh"/>
+                                <include reference="29x-gj-xJt"/>
+                                <include reference="8j6-xQ-0Se"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="MIS-gP-uw0"/>
+                                <include reference="sxk-S6-D5k"/>
+                                <include reference="eRK-A4-mtB"/>
+                                <include reference="bhC-YO-gIS"/>
+                                <include reference="h9M-Gp-oZL"/>
+                                <include reference="U3s-4C-rDv"/>
+                                <include reference="fFz-7t-hhm"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="7Va-1L-paG"/>
+                                <include reference="CR8-4l-VLw"/>
+                                <include reference="EoL-dn-zxe"/>
+                                <include reference="HPY-rZ-Vu9"/>
+                                <include reference="O1B-Re-jov"/>
+                                <include reference="Pqe-2D-S0n"/>
+                                <include reference="LKp-K1-aFE"/>
+                                <include reference="88e-WU-R2z"/>
+                                <include reference="S57-oM-Caj"/>
+                                <include reference="Fn0-xr-Tc8"/>
+                                <include reference="Hjb-od-cFc"/>
+                                <include reference="bhZ-RR-KVV"/>
+                                <include reference="44h-3C-Gsd"/>
+                                <include reference="WwH-9q-z4f"/>
+                                <include reference="7T9-vx-mIt"/>
+                                <include reference="4SQ-8s-pvV"/>
+                                <include reference="Npf-oF-zZt"/>
+                                <include reference="duQ-V8-0mi"/>
+                                <include reference="ifA-lC-kXt"/>
+                                <include reference="rBP-6A-I3H"/>
+                                <include reference="2W3-OV-Xg3"/>
+                                <include reference="ItG-8G-4P9"/>
+                                <include reference="6b6-Ki-hGh"/>
+                                <include reference="L9F-cJ-vO3"/>
+                                <include reference="M1d-ng-l3h"/>
+                                <include reference="18t-3k-c1x"/>
+                                <include reference="TpK-oq-RT4"/>
+                                <include reference="gBv-Ab-dPg"/>
+                                <include reference="O12-a3-jLl"/>
+                                <include reference="Yv5-xX-PFN"/>
+                                <include reference="D0f-9o-D5w"/>
+                                <include reference="6Vh-aR-8Uf"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="expressLabel" destination="fFz-7t-hhm" id="y4E-Z9-f6V"/>
+                        <outlet property="radianIndicatorLabel" destination="Lou-pP-K52" id="CjT-NU-gMZ"/>
                         <outlet property="resultLabel" destination="U3s-4C-rDv" id="ews-8f-R7g"/>
+                        <outlet property="tableView" destination="zdw-MM-cuN" id="yyP-jl-akK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-26.153846153846153" y="3.5545023696682461"/>
+            <point key="canvasLocation" x="-26.303317535545023" y="3.0769230769230766"/>
         </scene>
     </scenes>
     <designables>
         <designable name="03K-si-d9B">
             <size key="intrinsicContentSize" width="43.666666666666664" height="59.333333333333336"/>
         </designable>
+        <designable name="4EX-rC-M70">
+            <size key="intrinsicContentSize" width="43" height="42.666666666666664"/>
+        </designable>
+        <designable name="4Ku-wT-m2z">
+            <size key="intrinsicContentSize" width="50.666666666666664" height="30.666666666666668"/>
+        </designable>
+        <designable name="9pP-GK-dFv">
+            <size key="intrinsicContentSize" width="47" height="38"/>
+        </designable>
+        <designable name="DXf-Ux-9b8">
+            <size key="intrinsicContentSize" width="44" height="42.666666666666664"/>
+        </designable>
+        <designable name="FKE-kG-IJC">
+            <size key="intrinsicContentSize" width="39.333333333333336" height="28"/>
+        </designable>
+        <designable name="Gqa-gT-8IB">
+            <size key="intrinsicContentSize" width="44" height="38"/>
+        </designable>
+        <designable name="IDc-dY-hQ5">
+            <size key="intrinsicContentSize" width="53" height="38"/>
+        </designable>
         <designable name="ITC-W0-J1r">
             <size key="intrinsicContentSize" width="56" height="50"/>
         </designable>
+        <designable name="VWT-0g-9Gd">
+            <size key="intrinsicContentSize" width="47" height="36.666666666666664"/>
+        </designable>
         <designable name="XaU-A3-J2F">
             <size key="intrinsicContentSize" width="44" height="42.666666666666664"/>
+        </designable>
+        <designable name="Ytw-Lx-6mZ">
+            <size key="intrinsicContentSize" width="75.333333333333329" height="50"/>
+        </designable>
+        <designable name="bCo-ZK-H1S">
+            <size key="intrinsicContentSize" width="43.666666666666664" height="59.333333333333336"/>
         </designable>
         <designable name="eua-4f-9QM">
             <size key="intrinsicContentSize" width="39.333333333333336" height="50.666666666666664"/>
@@ -501,7 +1230,7 @@
             <size key="intrinsicContentSize" width="45" height="62.666666666666664"/>
         </designable>
         <designable name="m31-kG-HXG">
-            <size key="intrinsicContentSize" width="45.666666666666664" height="49"/>
+            <size key="intrinsicContentSize" width="45" height="59"/>
         </designable>
         <designable name="mRV-QI-LtR">
             <size key="intrinsicContentSize" width="44" height="60.333333333333336"/>
@@ -509,11 +1238,23 @@
         <designable name="sxk-S6-D5k">
             <size key="intrinsicContentSize" width="30" height="34"/>
         </designable>
+        <designable name="yYN-dK-tJG">
+            <size key="intrinsicContentSize" width="40.666666666666664" height="50"/>
+        </designable>
+        <designable name="ynE-Ex-gvF">
+            <size key="intrinsicContentSize" width="56" height="50"/>
+        </designable>
         <designable name="yor-7D-FbG">
             <size key="intrinsicContentSize" width="38.333333333333336" height="70.666666666666671"/>
         </designable>
     </designables>
     <resources>
         <image name="backspace-icon" width="23" height="16"/>
+        <image name="pi" width="12" height="12"/>
+        <image name="sq" width="18" height="18"/>
+        <image name="sqrt" width="20" height="14"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

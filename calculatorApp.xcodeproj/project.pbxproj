@@ -13,6 +13,7 @@
 		048ED32728DB368300BD3171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048ED32528DB368300BD3171 /* Main.storyboard */; };
 		048ED32928DB368500BD3171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048ED32828DB368500BD3171 /* Assets.xcassets */; };
 		048ED32C28DB368500BD3171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048ED32A28DB368500BD3171 /* LaunchScreen.storyboard */; };
+		9859660229050E5300115316 /* CalculatorHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859660129050E5300115316 /* CalculatorHistory.swift */; };
 		989334E428DFC19700698178 /* ReemKufi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 989334E028DFC05C00698178 /* ReemKufi-Bold.ttf */; };
 		989334E528DFC19A00698178 /* ReemKufi-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 989334E128DFC05C00698178 /* ReemKufi-Medium.ttf */; };
 		989334E628DFC19D00698178 /* ReemKufi-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 989334E328DFC05C00698178 /* ReemKufi-SemiBold.ttf */; };
@@ -32,6 +33,7 @@
 		048ED32828DB368500BD3171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		048ED32B28DB368500BD3171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		048ED32D28DB368500BD3171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9859660129050E5300115316 /* CalculatorHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorHistory.swift; sourceTree = "<group>"; };
 		989334E028DFC05C00698178 /* ReemKufi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReemKufi-Bold.ttf"; sourceTree = "<group>"; };
 		989334E128DFC05C00698178 /* ReemKufi-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReemKufi-Medium.ttf"; sourceTree = "<group>"; };
 		989334E228DFC05C00698178 /* ReemKufi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReemKufi-Regular.ttf"; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			children = (
 				98BF4B4928DFD24A009C54E1 /* Number.swift */,
 				98BF4B5A28DFF3BB009C54E1 /* Constant.swift */,
+				9859660129050E5300115316 /* CalculatorHistory.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				98C415D328DFA07600F23B55 /* CircleUIButton.swift in Sources */,
 				048ED32028DB368300BD3171 /* AppDelegate.swift in Sources */,
 				048ED32228DB368300BD3171 /* SceneDelegate.swift in Sources */,
+				9859660229050E5300115316 /* CalculatorHistory.swift in Sources */,
 				98BF4B5B28DFF3BB009C54E1 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,7 +354,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -383,7 +388,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
